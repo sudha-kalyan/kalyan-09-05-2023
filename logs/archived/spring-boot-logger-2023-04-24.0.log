@@ -1,0 +1,1226 @@
+2023-04-24 10:18:48,733 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 7544 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 10:18:48,867 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 10:18:49,225 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 10:18:49,313 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 10:18:54,403 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 10:18:54,419 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 10:18:55,126 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 664 ms. Found 9 JPA repository interfaces.
+2023-04-24 10:18:58,167 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 10:18:58,198 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:18:58,203 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 10:18:58,206 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 10:18:58,925 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 10:18:58,927 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 9588 ms
+2023-04-24 10:18:59,380 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 10:19:01,689 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 10:19:02,967 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 10:19:03,233 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 10:19:04,184 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 10:19:04,731 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 10:19:07,667 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 10:19:07,694 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 10:19:10,248 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 10:19:11,558 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 10:19:11,874 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 10:19:12,662 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 10:19:12,714 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:19:12,809 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 10:19:12,855 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 10:19:12,962 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 26.309 seconds (JVM running for 42.4)
+2023-04-24 10:19:27,347 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 10:19:27,599 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 10:19:27,919 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 5 ms
+2023-04-24 10:20:05,054 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-4] home method info
+2023-04-24 10:20:05,072 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-4] home method warning
+2023-04-24 10:20:05,088 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-4] home method error
+2023-04-24 10:20:05,372 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-5] home method info
+2023-04-24 10:20:05,373 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-5] home method warning
+2023-04-24 10:20:05,485 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-5] home method error
+2023-04-24 10:21:55,933 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: empty String] with root cause
+java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at com.raithanna.dairy.RaithannaDairy.controller.purchaseOrderController.savePurchases(purchaseOrderController.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-24 10:23:49,929 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 10:23:49,976 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 10:23:50,092 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 10:43:43,469 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 5724 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 10:43:43,481 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 10:43:43,859 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 10:43:43,879 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 10:43:47,198 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 10:43:47,204 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 10:43:47,800 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 558 ms. Found 9 JPA repository interfaces.
+2023-04-24 10:43:50,957 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 10:43:50,988 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:43:50,991 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 10:43:50,992 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 10:43:51,572 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 10:43:51,574 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 7667 ms
+2023-04-24 10:43:51,973 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 10:43:53,308 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 10:43:54,515 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 10:43:54,766 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 10:43:55,367 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 10:43:55,821 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 10:43:58,700 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 10:43:58,734 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 10:44:01,210 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 10:44:02,697 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 10:44:02,940 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 10:44:03,784 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 10:44:03,833 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:44:03,897 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 10:44:03,962 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 10:44:04,063 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 22.31 seconds (JVM running for 27.028)
+2023-04-24 10:44:47,773 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 10:44:47,806 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 10:44:47,832 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 26 ms
+2023-04-24 10:46:52,009 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 10:46:52,025 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 10:46:52,078 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 10:47:07,345 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 3700 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 10:47:07,386 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 10:47:07,737 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 10:47:07,741 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 10:47:11,486 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 10:47:11,505 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 10:47:12,269 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 718 ms. Found 9 JPA repository interfaces.
+2023-04-24 10:47:15,164 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 10:47:15,194 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:47:15,197 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 10:47:15,197 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 10:47:15,656 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 10:47:15,659 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 7912 ms
+2023-04-24 10:47:16,157 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 10:47:17,310 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 10:47:18,265 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 10:47:18,544 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 10:47:20,238 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 10:47:20,821 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 10:47:24,350 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 10:47:24,372 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 10:47:27,099 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 10:47:29,470 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 10:47:29,808 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 10:47:30,761 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 10:47:30,820 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:47:31,135 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 10:47:31,276 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 10:47:31,318 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 25.804 seconds (JVM running for 29.347)
+2023-04-24 10:47:53,237 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 10:47:53,254 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 10:47:53,257 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 2 ms
+2023-04-24 10:48:01,197 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method info
+2023-04-24 10:48:01,269 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method warning
+2023-04-24 10:48:01,314 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method error
+2023-04-24 10:51:03,266 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 10:51:03,344 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 10:51:03,422 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 10:51:28,298 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 7232 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 10:51:28,311 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 10:51:28,635 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 10:51:28,655 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 10:51:32,323 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 10:51:32,329 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 10:51:33,036 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 675 ms. Found 9 JPA repository interfaces.
+2023-04-24 10:51:36,307 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 10:51:36,333 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:51:36,344 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 10:51:36,345 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 10:51:36,853 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 10:51:36,856 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8191 ms
+2023-04-24 10:51:37,272 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 10:51:38,366 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 10:51:39,646 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 10:51:39,834 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 10:51:40,399 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 10:51:40,812 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 10:51:43,522 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 10:51:43,590 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 10:51:46,127 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 10:51:47,416 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 10:51:48,036 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 10:51:49,236 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 10:51:49,288 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:51:49,376 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 10:51:49,414 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 10:51:49,438 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 22.989 seconds (JVM running for 37.301)
+2023-04-24 10:51:59,515 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 10:51:59,661 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 10:51:59,722 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 60 ms
+2023-04-24 10:53:43,093 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 10:53:43,108 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 10:53:43,125 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 10:53:59,822 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 9572 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 10:53:59,841 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 10:54:00,636 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 10:54:00,694 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 10:54:13,245 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 10:54:13,261 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 10:54:13,888 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 595 ms. Found 9 JPA repository interfaces.
+2023-04-24 10:54:17,110 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 10:54:17,185 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:54:17,186 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 10:54:17,187 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 10:54:17,914 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 10:54:17,917 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 17204 ms
+2023-04-24 10:54:18,329 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 10:54:19,526 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 10:54:20,485 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 10:54:20,655 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 10:54:21,393 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 10:54:21,747 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 10:54:27,795 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 10:54:27,941 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 10:54:35,457 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 10:54:37,981 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 10:54:39,432 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 10:54:41,231 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 10:54:41,324 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 10:54:41,530 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 10:54:41,589 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 10:54:41,623 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 44.541 seconds (JVM running for 47.852)
+2023-04-24 11:12:26,797 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 11:12:26,948 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 11:12:27,193 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 11:43:10,459 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 1200 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 11:43:10,482 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 11:43:11,154 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 11:43:11,155 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 11:43:16,443 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 11:43:16,454 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 11:43:17,991 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 1486 ms. Found 9 JPA repository interfaces.
+2023-04-24 11:43:21,406 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 11:43:21,467 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 11:43:21,471 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 11:43:21,476 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 11:43:22,467 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 11:43:22,469 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 11311 ms
+2023-04-24 11:43:23,493 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 11:43:24,659 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 11:43:25,801 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 11:43:26,029 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 11:43:26,888 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 11:43:27,366 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 11:43:30,534 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 11:43:30,570 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 11:43:34,121 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 11:43:35,458 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 11:43:36,096 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 11:43:37,161 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 11:43:37,453 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 11:43:39,178 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 11:43:39,253 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 11:43:39,305 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 30.692 seconds (JVM running for 34.995)
+2023-04-24 11:44:04,006 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 11:44:04,016 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 11:44:04,059 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 43 ms
+2023-04-24 11:45:17,563 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method info
+2023-04-24 11:45:17,588 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method warning
+2023-04-24 11:45:17,592 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method error
+2023-04-24 11:49:34,081 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-10] home method info
+2023-04-24 11:49:34,082 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 11:49:34,174 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-10] home method warning
+2023-04-24 11:49:34,173 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 11:49:34,178 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 11:49:34,178 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-10] home method error
+2023-04-24 11:50:34,658 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-5] home method info
+2023-04-24 11:50:34,684 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-5] home method warning
+2023-04-24 11:50:34,685 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-5] home method error
+2023-04-24 11:50:34,910 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 11:50:34,911 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 11:50:34,911 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 11:51:30,719 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 11:51:30,758 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 11:51:30,842 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 11:51:44,734 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 3916 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 11:51:44,752 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 11:51:45,103 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 11:51:45,120 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 11:51:48,961 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 11:51:48,968 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 11:51:49,850 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 850 ms. Found 9 JPA repository interfaces.
+2023-04-24 11:51:53,142 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 11:51:53,171 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 11:51:53,173 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 11:51:53,174 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 11:51:53,807 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 11:51:53,811 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8630 ms
+2023-04-24 11:51:54,272 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 11:51:55,934 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 11:51:58,641 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 11:51:59,903 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 11:52:02,426 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 11:52:04,793 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 11:52:13,564 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 11:52:13,611 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 11:52:22,845 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 11:52:25,738 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 11:52:26,168 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 11:52:27,921 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 11:52:27,993 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 11:52:28,135 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 11:52:28,308 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 11:52:28,408 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 45.876 seconds (JVM running for 49.678)
+2023-04-24 11:52:54,834 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 11:52:54,837 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 11:52:54,843 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 5 ms
+2023-04-24 11:53:02,478 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method info
+2023-04-24 11:53:02,480 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method warning
+2023-04-24 11:53:02,481 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method error
+2023-04-24 12:32:02,353 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m4s803ms926µs600ns).
+2023-04-24 12:51:31,150 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "javax.servlet.http.HttpSession.getAttribute(String)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "javax.servlet.http.HttpSession.getAttribute(String)" is null
+	at com.raithanna.dairy.RaithannaDairy.controller.orderController.createOrder_html(orderController.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-24 12:51:37,794 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 12:51:37,888 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 12:51:37,950 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 12:51:56,409 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 15052 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 12:51:56,463 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 12:51:57,082 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 12:51:57,083 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 12:52:03,824 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 12:52:03,831 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 12:52:05,338 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 1408 ms. Found 9 JPA repository interfaces.
+2023-04-24 12:52:10,002 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 12:52:10,037 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 12:52:10,047 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 12:52:10,069 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 12:52:10,753 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 12:52:10,765 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 13680 ms
+2023-04-24 12:52:11,273 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 12:52:13,055 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 12:52:13,987 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 12:52:14,299 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 12:52:15,037 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 12:52:15,831 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 12:52:20,989 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 12:52:21,286 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 12:52:24,124 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 12:52:26,812 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 12:52:29,185 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 12:52:33,585 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 12:52:33,797 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 12:52:35,137 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 12:52:35,324 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 12:52:35,449 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 40.636 seconds (JVM running for 44.093)
+2023-04-24 12:52:35,640 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 12:52:35,672 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 12:52:35,687 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 7 ms
+2023-04-24 12:52:44,116 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method info
+2023-04-24 12:52:44,132 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method warning
+2023-04-24 12:52:44,133 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method error
+2023-04-24 12:53:22,619 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.trim()" because "in" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.trim()" because "in" is null
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at com.raithanna.dairy.RaithannaDairy.controller.orderController.getproductRatesByCustcode(orderController.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-24 13:34:31,181 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m17s508ms614µs600ns).
+2023-04-24 13:51:23,390 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 13:51:23,598 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 13:51:23,686 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 13:51:59,486 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 5964 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 13:51:59,503 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 13:52:00,712 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 13:52:00,725 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 13:52:12,285 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 13:52:12,298 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 13:52:13,802 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 1428 ms. Found 9 JPA repository interfaces.
+2023-04-24 13:52:23,197 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 13:52:23,245 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 13:52:23,257 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 13:52:23,261 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 13:52:24,356 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 13:52:24,500 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 23731 ms
+2023-04-24 13:52:26,337 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 13:52:28,239 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 13:52:30,153 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 13:52:31,035 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 13:52:32,559 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 13:52:33,772 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 13:52:40,868 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 13:52:40,902 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 13:52:45,252 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 13:52:50,313 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 13:52:51,318 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 13:52:54,110 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 13:52:54,243 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 13:52:55,886 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 13:52:57,147 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 13:52:57,292 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 60.837 seconds (JVM running for 72.746)
+2023-04-24 13:57:58,843 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 13:57:58,878 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 13:57:59,038 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 157 ms
+2023-04-24 13:58:14,094 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method info
+2023-04-24 13:58:14,096 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method warning
+2023-04-24 13:58:14,100 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method error
+2023-04-24 13:58:14,094 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 13:58:14,103 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 13:58:14,103 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 14:00:02,462 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 14:00:02,771 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 14:00:02,950 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 14:00:27,949 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 9280 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 14:00:27,959 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 14:00:28,403 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 14:00:28,523 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 14:00:33,543 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 14:00:33,552 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 14:00:34,405 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 807 ms. Found 9 JPA repository interfaces.
+2023-04-24 14:00:38,985 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 14:00:39,035 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 14:00:39,040 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 14:00:39,042 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 14:00:39,632 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 14:00:39,635 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 11017 ms
+2023-04-24 14:00:40,255 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 14:00:42,247 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 14:00:45,866 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 14:00:46,057 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 14:00:47,715 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 14:00:48,361 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 14:00:52,044 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 14:00:52,078 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 14:00:55,409 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 14:00:56,893 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 14:00:57,312 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 14:00:58,130 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 14:00:58,184 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 14:00:58,283 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 14:00:58,618 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 14:00:59,523 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 34.669 seconds (JVM running for 43.995)
+2023-04-24 14:01:19,271 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 14:01:19,280 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 14:01:19,300 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 4 ms
+2023-04-24 14:01:24,431 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 14:01:24,432 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 14:01:24,433 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 14:02:24,589 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 14:02:25,423 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 14:02:27,372 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 14:04:28,851 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 14188 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 14:04:28,859 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 14:04:29,224 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 14:04:29,234 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 14:04:32,922 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 14:04:32,927 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 14:04:33,532 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 563 ms. Found 9 JPA repository interfaces.
+2023-04-24 14:04:37,037 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 14:04:37,069 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 14:04:37,070 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 14:04:37,071 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 14:04:37,654 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 14:04:37,657 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8316 ms
+2023-04-24 14:04:38,200 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 14:04:39,701 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 14:04:40,692 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 14:04:41,038 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 14:04:42,020 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 14:04:42,470 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 14:04:45,935 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 14:04:45,973 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 14:04:48,666 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 14:04:51,605 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 14:04:52,061 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 14:04:53,872 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 14:04:53,986 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 14:04:54,157 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 14:04:54,206 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 14:04:54,258 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 27.551 seconds (JVM running for 31.611)
+2023-04-24 14:12:45,604 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 14:12:45,642 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 14:12:45,953 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 305 ms
+2023-04-24 14:12:52,959 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method info
+2023-04-24 14:12:52,964 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method warning
+2023-04-24 14:12:52,966 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method error
+2023-04-24 15:05:16,882 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:05:17,599 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 15:05:17,957 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 15:05:46,274 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 12280 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 15:05:46,294 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 15:05:47,363 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 15:05:47,373 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 15:05:50,944 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 15:05:50,951 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 15:05:51,748 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 758 ms. Found 9 JPA repository interfaces.
+2023-04-24 15:05:56,979 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 15:05:57,011 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:05:57,014 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 15:05:57,016 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 15:05:57,843 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 15:05:57,864 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 10449 ms
+2023-04-24 15:05:59,453 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 15:06:00,711 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 15:06:01,948 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 15:06:02,207 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 15:06:02,907 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 15:06:03,318 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 15:06:07,312 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 15:06:07,346 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:06:10,289 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 15:06:12,648 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 15:06:12,960 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 15:06:13,787 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 15:06:13,851 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:06:14,031 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 15:06:14,074 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 15:06:14,324 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 30.351 seconds (JVM running for 36.995)
+2023-04-24 15:32:43,340 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m41s104ms660µs100ns).
+2023-04-24 15:33:59,653 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:33:59,910 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 15:34:01,160 ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler [pool-2-thread-1] Unexpected error occurred in scheduled task
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:467)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:587)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:547)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:636)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:158)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.createNativeEntityManager(AbstractEntityManagerFactoryBean.java:585)
+	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.invokeProxyMethod(AbstractEntityManagerFactoryBean.java:487)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$ManagedEntityManagerFactoryInvocationHandler.invoke(AbstractEntityManagerFactoryBean.java:734)
+	at jdk.proxy4/jdk.proxy4.$Proxy107.createNativeEntityManager(Unknown Source)
+	at org.springframework.orm.jpa.JpaTransactionManager.createEntityManagerForTransaction(JpaTransactionManager.java:485)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:410)
+	... 12 common frames omitted
+2023-04-24 15:34:03,003 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 15:34:43,112 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 9872 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 15:34:43,112 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 15:34:43,510 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 15:34:43,541 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 15:34:53,722 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 15:34:53,736 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 15:34:56,475 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 2652 ms. Found 9 JPA repository interfaces.
+2023-04-24 15:35:05,460 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 15:35:05,491 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:35:05,491 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 15:35:05,491 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 15:35:05,965 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 15:35:05,965 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 22377 ms
+2023-04-24 15:35:06,356 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 15:35:09,228 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 15:35:10,376 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 15:35:10,595 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 15:35:11,298 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 15:35:11,738 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 15:35:14,505 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 15:35:14,536 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:35:17,126 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 15:35:20,643 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 15:35:22,215 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 15:35:22,921 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 15:35:22,968 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:35:23,048 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 15:35:23,078 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 15:35:23,109 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 42.77 seconds (JVM running for 59.144)
+2023-04-24 15:42:36,120 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 15:42:36,134 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 15:42:36,193 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 59 ms
+2023-04-24 15:43:37,756 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 15:43:37,759 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 15:43:37,760 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 15:46:36,481 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:46:36,591 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 15:46:36,673 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 15:46:59,968 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 14876 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 15:46:59,998 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 15:47:00,446 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 15:47:00,515 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 15:47:04,446 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 15:47:04,452 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 15:47:05,220 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 727 ms. Found 9 JPA repository interfaces.
+2023-04-24 15:47:08,840 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 15:47:08,920 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:47:08,922 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 15:47:08,923 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 15:47:09,392 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 15:47:09,395 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8751 ms
+2023-04-24 15:47:09,852 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 15:47:11,992 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 15:47:15,220 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 15:47:16,119 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 15:47:17,953 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 15:47:18,615 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 15:47:23,714 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 15:47:23,746 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:47:30,675 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 15:47:33,267 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 15:47:33,696 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 15:47:35,380 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 15:47:35,445 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:47:35,532 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 15:47:35,614 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 15:47:35,665 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 39.579 seconds (JVM running for 46.171)
+2023-04-24 15:48:52,687 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:48:52,737 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 15:48:52,793 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 15:49:05,565 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 12448 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 15:49:05,576 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 15:49:06,347 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 15:49:06,411 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 15:49:10,309 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 15:49:10,316 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 15:49:11,054 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 703 ms. Found 9 JPA repository interfaces.
+2023-04-24 15:49:14,668 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 15:49:14,696 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:49:14,698 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 15:49:14,698 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 15:49:15,352 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 15:49:15,356 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8911 ms
+2023-04-24 15:49:15,947 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 15:49:17,758 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 15:49:18,845 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 15:49:19,009 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 15:49:19,595 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 15:49:20,017 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 15:49:22,932 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 15:49:22,959 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:49:25,650 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 15:49:27,015 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 15:49:27,391 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 15:49:28,675 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 15:49:28,803 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:49:28,976 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 15:49:29,016 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 15:49:29,043 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 25.399 seconds (JVM running for 29.911)
+2023-04-24 15:50:04,746 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 15:50:04,752 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 15:50:04,814 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 61 ms
+2023-04-24 15:50:11,106 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-5] home method info
+2023-04-24 15:50:11,125 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-5] home method warning
+2023-04-24 15:50:11,128 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-5] home method error
+2023-04-24 15:50:44,311 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:50:44,421 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 15:50:44,533 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 15:51:03,420 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 15336 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 15:51:03,429 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 15:51:03,799 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 15:51:03,809 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 15:51:07,779 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 15:51:07,785 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 15:51:08,395 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 572 ms. Found 9 JPA repository interfaces.
+2023-04-24 15:51:13,195 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 15:51:13,238 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:51:13,240 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 15:51:13,240 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 15:51:13,707 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 15:51:13,710 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 9880 ms
+2023-04-24 15:51:14,182 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 15:51:15,659 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 15:51:16,589 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 15:51:16,959 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 15:51:17,709 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 15:51:18,186 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 15:51:21,615 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 15:51:21,651 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:51:23,988 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 15:51:25,720 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 15:51:26,069 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 15:51:26,846 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 15:51:26,936 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:51:27,019 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 15:51:27,114 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 15:51:27,158 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 25.407 seconds (JVM running for 29.675)
+2023-04-24 15:51:35,200 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 15:51:35,200 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 15:51:35,200 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 0 ms
+2023-04-24 15:51:42,017 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method info
+2023-04-24 15:51:42,019 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method warning
+2023-04-24 15:51:42,020 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method error
+2023-04-24 15:52:16,584 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:52:16,630 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 15:52:16,700 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 15:52:38,145 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 5432 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 15:52:38,152 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 15:52:38,800 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 15:52:38,830 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 15:52:42,291 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 15:52:42,296 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 15:52:42,990 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 653 ms. Found 9 JPA repository interfaces.
+2023-04-24 15:52:46,283 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 15:52:46,318 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:52:46,319 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 15:52:46,320 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 15:52:46,785 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 15:52:46,788 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 7952 ms
+2023-04-24 15:52:47,256 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 15:52:48,581 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 15:52:49,454 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 15:52:49,794 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 15:52:50,416 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 15:52:50,889 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 15:52:54,725 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 15:52:54,746 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 15:52:57,184 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 15:52:58,674 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 15:52:59,728 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 15:53:00,686 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 15:53:00,737 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 15:53:00,821 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 15:53:00,878 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 15:53:01,229 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 24.945 seconds (JVM running for 31.057)
+2023-04-24 15:53:09,632 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 15:53:09,720 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 15:53:09,723 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 2 ms
+2023-04-24 15:53:29,986 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-10] home method info
+2023-04-24 15:53:30,006 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-10] home method warning
+2023-04-24 15:53:30,009 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-10] home method error
+2023-04-24 15:53:30,117 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-2] home method info
+2023-04-24 15:53:30,121 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-2] home method warning
+2023-04-24 15:53:30,121 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-2] home method error
+2023-04-24 16:08:41,708 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 16:08:41,829 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 16:08:41,942 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 16:08:55,981 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 15268 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 16:08:55,989 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 16:08:56,335 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 16:08:56,340 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 16:09:00,052 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 16:09:00,094 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 16:09:00,876 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 736 ms. Found 9 JPA repository interfaces.
+2023-04-24 16:09:03,784 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 16:09:03,818 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 16:09:03,819 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 16:09:03,820 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 16:09:04,272 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 16:09:04,274 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 7925 ms
+2023-04-24 16:09:04,763 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 16:09:06,930 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 16:09:08,041 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 16:09:08,365 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 16:09:11,351 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 16:09:11,946 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 16:09:14,734 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 16:09:14,773 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 16:09:17,270 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 16:09:18,723 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 16:09:19,058 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 16:09:19,915 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 16:09:19,975 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 16:09:20,137 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 16:09:20,206 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 16:09:20,235 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 26.137 seconds (JVM running for 29.233)
+2023-04-24 16:10:55,735 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 16:10:55,751 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-3] Initializing Servlet 'dispatcherServlet'
+2023-04-24 16:10:55,839 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-3] Completed initialization in 87 ms
+2023-04-24 16:14:45,844 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-10] home method info
+2023-04-24 16:14:45,845 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-10] home method warning
+2023-04-24 16:14:45,846 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-10] home method error
+2023-04-24 16:21:01,575 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 16:21:01,634 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 16:21:01,712 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 16:21:15,946 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 11308 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 16:21:15,958 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 16:21:16,330 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 16:21:16,358 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 16:21:20,401 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 16:21:20,406 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 16:21:21,036 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 576 ms. Found 9 JPA repository interfaces.
+2023-04-24 16:21:24,204 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 16:21:24,235 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 16:21:24,236 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 16:21:24,237 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 16:21:24,934 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 16:21:24,937 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8539 ms
+2023-04-24 16:21:25,399 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 16:21:27,139 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 16:21:28,191 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 16:21:28,357 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 16:21:29,019 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 16:21:29,431 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 16:21:33,266 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 16:21:33,295 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 16:21:35,599 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 16:21:37,344 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 16:21:37,614 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 16:21:38,544 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 16:21:38,833 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 16:21:38,935 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 16:21:38,974 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 16:21:38,999 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 25.052 seconds (JVM running for 28.691)
+2023-04-24 16:23:16,144 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 16:23:16,177 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 16:23:16,233 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 56 ms
+2023-04-24 16:23:25,795 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method info
+2023-04-24 16:23:25,798 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method warning
+2023-04-24 16:23:25,798 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method error
+2023-04-24 16:23:25,762 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 16:23:25,804 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 16:23:25,805 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 16:26:43,147 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 16:26:43,208 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 16:26:43,279 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 16:27:03,810 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 6300 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 16:27:03,817 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 16:27:04,523 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 16:27:04,604 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 16:27:10,121 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 16:27:10,136 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 16:27:10,930 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 760 ms. Found 9 JPA repository interfaces.
+2023-04-24 16:27:14,180 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 16:27:14,254 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 16:27:14,256 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 16:27:14,257 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 16:27:14,760 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 16:27:14,766 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 10155 ms
+2023-04-24 16:27:15,192 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 16:27:16,606 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 16:27:17,658 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 16:27:17,912 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 16:27:18,531 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 16:27:18,923 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 16:27:21,543 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 16:27:21,567 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 16:27:24,025 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 16:27:26,241 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 16:27:26,744 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 16:27:27,532 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 16:27:27,589 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 16:27:27,645 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 16:27:27,700 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 16:27:27,725 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 25.949 seconds (JVM running for 30.064)
+2023-04-24 16:57:13,868 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 16:57:14,027 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 16:57:14,129 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 16:57:44,793 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 14220 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 16:57:44,800 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 16:57:45,254 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 16:57:45,329 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 16:57:51,758 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 16:57:51,775 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 16:57:52,616 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 780 ms. Found 9 JPA repository interfaces.
+2023-04-24 16:57:56,674 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 16:57:56,747 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 16:57:56,755 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 16:57:56,764 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 16:57:57,301 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 16:57:57,305 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 11865 ms
+2023-04-24 16:57:58,109 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 16:57:59,833 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 16:58:01,067 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 16:58:01,417 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 16:58:02,210 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 16:58:02,884 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 16:58:06,108 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 16:58:06,140 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 16:58:09,962 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 16:58:11,312 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 16:58:11,591 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 16:58:12,552 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 16:58:12,604 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 16:58:12,711 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 16:58:12,752 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 16:58:12,931 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 30.318 seconds (JVM running for 44.632)
+2023-04-24 16:59:12,550 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 16:59:12,618 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 16:59:12,700 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 81 ms
+2023-04-24 16:59:23,380 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method info
+2023-04-24 16:59:23,381 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method warning
+2023-04-24 16:59:23,382 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-7] home method error
+2023-04-24 16:59:23,380 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 16:59:23,384 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 16:59:23,384 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 17:02:24,076 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:02:24,224 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 17:02:24,424 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 17:02:42,516 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 13624 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 17:02:42,548 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 17:02:42,881 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 17:02:42,904 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 17:02:46,551 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 17:02:46,560 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 17:02:47,866 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 1271 ms. Found 9 JPA repository interfaces.
+2023-04-24 17:02:50,971 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 17:02:51,002 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:02:51,004 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 17:02:51,005 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 17:02:51,482 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 17:02:51,487 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8562 ms
+2023-04-24 17:02:52,272 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 17:02:53,883 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 17:02:54,896 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 17:02:55,060 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 17:02:56,001 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 17:02:56,431 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 17:02:59,374 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 17:02:59,408 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:03:02,418 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 17:03:03,772 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 17:03:04,066 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 17:03:04,926 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 17:03:04,973 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:03:05,073 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 17:03:05,114 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 17:03:05,259 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 25.075 seconds (JVM running for 30.839)
+2023-04-24 17:03:56,839 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 17:03:56,842 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 17:03:56,869 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 26 ms
+2023-04-24 17:04:04,345 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 17:04:04,349 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 17:04:04,360 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 17:07:11,675 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:07:11,789 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 17:07:11,919 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 17:07:28,205 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 2140 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 17:07:28,271 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 17:07:28,592 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 17:07:28,593 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 17:07:32,016 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 17:07:32,021 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 17:07:32,644 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 582 ms. Found 9 JPA repository interfaces.
+2023-04-24 17:07:36,435 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 17:07:36,468 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:07:36,470 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 17:07:36,472 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 17:07:37,129 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 17:07:37,132 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8501 ms
+2023-04-24 17:07:37,700 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 17:07:38,938 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 17:07:39,840 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 17:07:40,016 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 17:07:40,743 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 17:07:41,159 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 17:07:44,669 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 17:07:44,707 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:07:46,985 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 17:07:48,768 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 17:07:49,061 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 17:07:50,000 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 17:07:50,450 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:07:50,547 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 17:07:50,594 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 17:07:50,645 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 25.968 seconds (JVM running for 30.223)
+2023-04-24 17:07:59,523 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 17:07:59,564 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-24 17:07:59,837 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-2] Completed initialization in 261 ms
+2023-04-24 17:08:11,017 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method info
+2023-04-24 17:08:11,063 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method warning
+2023-04-24 17:08:11,065 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-8] home method error
+2023-04-24 17:08:11,168 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-1] home method info
+2023-04-24 17:08:11,197 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-1] home method warning
+2023-04-24 17:08:11,197 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-1] home method error
+2023-04-24 17:09:40,547 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:09:40,814 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 17:09:40,939 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 17:09:52,646 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 6640 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 17:09:52,697 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 17:09:53,214 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 17:09:53,261 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 17:09:57,207 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 17:09:57,215 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 17:09:57,928 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 677 ms. Found 9 JPA repository interfaces.
+2023-04-24 17:10:01,838 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 17:10:01,869 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:10:01,870 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 17:10:01,872 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 17:10:02,300 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 17:10:02,302 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8998 ms
+2023-04-24 17:10:03,274 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 17:10:04,418 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 17:10:05,730 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 17:10:05,924 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 17:10:06,660 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 17:10:07,011 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 17:10:10,963 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 17:10:10,987 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:10:13,277 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 17:10:14,767 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 17:10:15,064 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 17:10:15,968 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 17:10:16,029 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:10:16,114 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 17:10:16,271 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 17:10:16,312 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 25.527 seconds (JVM running for 28.721)
+2023-04-24 17:10:57,007 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 17:10:57,013 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 17:10:57,069 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 56 ms
+2023-04-24 17:11:04,483 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 17:11:04,485 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 17:11:04,487 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 17:46:09,204 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:46:09,618 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 17:46:09,871 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 17:46:27,836 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 7288 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 17:46:27,850 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 17:46:28,249 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 17:46:28,250 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 17:46:34,211 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 17:46:34,216 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 17:46:35,004 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 695 ms. Found 9 JPA repository interfaces.
+2023-04-24 17:46:38,539 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 17:46:38,608 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:46:38,611 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 17:46:38,611 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 17:46:39,158 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 17:46:39,160 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 10902 ms
+2023-04-24 17:46:40,048 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 17:46:41,423 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 17:46:43,397 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 17:46:43,622 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 17:46:44,246 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 17:46:44,894 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 17:46:48,389 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 17:46:48,427 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:46:51,578 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 17:46:53,067 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 17:46:53,373 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 17:46:54,247 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 17:46:54,299 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:46:54,442 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 17:46:54,539 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 17:46:54,563 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 29.098 seconds (JVM running for 32.693)
+2023-04-24 17:47:06,202 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 17:47:06,273 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-3] Initializing Servlet 'dispatcherServlet'
+2023-04-24 17:47:06,385 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-3] Completed initialization in 103 ms
+2023-04-24 17:47:32,159 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-2] home method info
+2023-04-24 17:47:32,160 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-2] home method warning
+2023-04-24 17:47:32,164 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-2] home method error
+2023-04-24 17:48:07,586 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:48:07,647 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 17:48:07,724 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 17:48:51,262 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 9696 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 17:48:51,273 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 17:48:51,587 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 17:48:51,588 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 17:48:56,182 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 17:48:56,187 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 17:48:56,890 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 626 ms. Found 9 JPA repository interfaces.
+2023-04-24 17:49:00,718 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 17:49:00,837 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:49:00,839 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 17:49:00,839 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 17:49:02,144 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 17:49:02,150 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 10533 ms
+2023-04-24 17:49:03,160 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 17:49:04,486 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 17:49:05,678 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 17:49:05,890 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 17:49:06,427 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 17:49:07,192 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 17:49:10,566 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 17:49:10,587 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:49:13,711 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 17:49:14,977 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 17:49:15,242 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 17:49:16,378 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 17:49:16,435 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:49:16,554 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 17:49:16,882 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 17:49:17,153 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 37.608 seconds (JVM running for 51.46)
+2023-04-24 17:52:24,819 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 17:52:24,838 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-24 17:52:25,529 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-1] Completed initialization in 690 ms
+2023-04-24 17:52:39,824 INFO com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method info
+2023-04-24 17:52:39,825 WARN com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method warning
+2023-04-24 17:52:39,826 ERROR com.raithanna.dairy.RaithannaDairy.controller.homeContoller [http-nio-9191-exec-6] home method error
+2023-04-24 17:53:39,181 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:53:39,258 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 17:53:39,379 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 17:54:01,672 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RaithannaDairyApplication using Java 17.0.5 on DESKTOP-8S9UB69 with PID 4076 (C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main\target\classes started by SATHWIK in C:\Users\SATHWIK\Downloads\kalyan_merged-05-04-2023-main)
+2023-04-24 17:54:01,691 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 17:54:02,163 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-24 17:54:02,165 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-24 17:54:09,445 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 17:54:09,451 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 17:54:11,042 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 1523 ms. Found 9 JPA repository interfaces.
+2023-04-24 17:54:17,067 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2023-04-24 17:54:17,096 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:54:17,100 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-24 17:54:17,102 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-24 17:54:17,492 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-24 17:54:17,495 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 15271 ms
+2023-04-24 17:54:18,192 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-24 17:54:19,558 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-24 17:54:21,221 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 17:54:21,448 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-24 17:54:22,153 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-24 17:54:22,558 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-24 17:54:26,330 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 17:54:26,354 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:54:28,733 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 17:54:30,190 INFO com.azure.core.util.logging.ClientLogger [restartedMain] Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.32.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2023-04-24 17:54:30,498 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-04-24 17:54:31,224 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-24 17:54:31,308 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2023-04-24 17:54:31,417 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2023-04-24 17:54:31,485 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [restartedMain] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-04-24 17:54:31,569 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RaithannaDairyApplication in 32.78 seconds (JVM running for 40.229)

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+          integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+          integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+          crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title></title>
+  <style>
+    .navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-6px;
+}
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+.header_bar {
+    position: top;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  background-color: blue;
+    text-align: center;
+    }
+.footer_bar {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: blue;
+   text-align: center;
+}
+.inputError{
+  background-color: #f4bfbf;
+  border: 1px solid #d03e3e;
+  color: #d03e3e;
+}
+.inputError::-webkit-input-placeholder{
+  color: #d03e3e;
+}
+
+.errorMessage{
+  background-color: #d03e3e;
+  color: #fff;
+  clear: right;
+  display: none;
+  font-size: 14px;
+  font-weight: bold;
+  height: 75px;
+  letter-spacing: 1px;
+
+  -moz-border-radius: 0px 0px 3px 3px;
+  -webkit-border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
+}
+.errorMessage p{
+  margin: 0px;
+  padding: 30px 0px 0px 30px;
+  text-align: left;
+}
+input#invDate{
+  width:150px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+  input#paymentDate{
+  width:150px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+#supplierName{
+  width:250px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+input#quantity{
+  width:70px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+  input#fatP{
+  width:70px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+  input#snfP{
+  width:70px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+  input#tsRate{
+  width:70px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+  #milkType{
+  width:70px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+  #paymentStatus{
+  width:150px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+  #vehicleNo{
+  width:100px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+  #bankName{
+  width:150px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+  #bankIfsc{
+  width:150px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
+    </style>
+</head>
+<body style="background-color: #fff;">
+<div th:replace="fragments/navbar :: navbar_header"></div>
+<div th:replace="fragments/navbar :: navbar_menu"></div>
+<div class="container">
+  <div th:replace="fragments/message :: message_html"></div>
+</div>
+<div class="container">
+  <br>
+  <h4 class = "text-middle"> <font color="#000080 ">
+    <b>Create Purchase Order</b> </font></h4>
+  <hr>
+  <form th:action="@{/purchase}" th:object="${purchase}" method="POST">
+  <div class="row auto-align">
+    <div class="col">
+      <label for="invDate">InvoiceDate</label>
+      <input id="invDate" name="invDate" class="form-control" type="date" th:min="${dateTime}" placeholder="dd/mm/yyyy">
+    </div>
+    <div class="col">
+      <label for="supplierName">Supplier Name</label>
+      <select id="supplierName" class="form-control" name="supplierName">
+        <option> --- Select Supplier Name ---</option>
+        <option th:each="i : ${supplier}" th:value="${i.supplierName}"><span th:text="${i.supplierName}"></span> - <span
+                th:text="${i.supplierCode}"></span></option>
+      </select>
+    </div>
+    <div class="col">
+      <label for="vehicleNo">VehicleNo</label>
+      <select id="vehicleNo" class="form-control" name="vehicleNo">
+        <option>Select VehicleNo</option>
+        <option th:each="i : ${vehicle}" th:value="${i.vehicleNo}"><span th:text="${i.vehicleNo}"></span></option>
+      </select>
+    </div>
+    <div class="col">
+      <label for="milkType">Milk Type</label>
+      <select id="milkType" class="form-control" name="milkType" >
+        <option>CM</option>
+        <option>BM</option>
+      </select>
+    </div>
+    <div class="col">
+      <label for="quantity">Qty In KG's</label>
+      <input
+              type="text"
+              name="quantity"
+              id="quantity"
+              th:field="*{quantity}"
+              class="form-control"
+      />
+    </div>
+    <div class="col">
+      <label for="fatP">FAT</label>
+      <input
+              type="text"
+              name="fatP"
+              id="fatP"
+              th:field="*{fatP}"
+              class="form-control"
+              maxlength="4-5" pattern="\d{5}"
+      />
+    </div>
+    <div class="col">
+      <label for="snfP">SNF</label>
+      <input
+              type="text"
+              name="snfP"
+              id="snfP"
+              th:field="*{snfP}"
+              class="form-control"  maxlength="5-12" pattern="\d{5}"
+      />
+    </div>
+    <div class="col">
+      <label for="tsRate">TS Rate</label>
+      <input
+              type="text"
+              name="tsRate"
+              id="tsRate"
+              th:field="*{tsRate}"
+              class="form-control"  maxlength="300-400" pattern="\d{5}"
+      />
+    </div>
+    </div>
+    <br>
+    <div class="row auto-align">
+    <div class="col-2">
+      <label for="paymentStatus">Payment Status</label>
+      <select id="paymentStatus" class="form-control" name="paymentStatus" >
+        <option value="">-- SELECT --</option>
+        <option value="Received">Received</option>
+        <option value="Pending">Pending</option>
+        <option value="Invoice Not Sent">Invoice Not Sent</option>
+      </select>
+    </div>
+  </div>
+    <div id="hide">
+      <div class="row auto-align">
+        <div class="col-3">
+          <label for="bankName">Bank</label>
+          <select id="bankName" class="form-control" name="bankName">
+            <option> --- Select Bank Name ---</option>
+            <option th:each="i : ${bank}" th:value="${i.bankName}"><span th:text="${i.bankName}"></span> - <span
+                    th:text="${i.bankIfsc}"></span></option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="paymentDate">PaymentDate</label>
+          <input id="paymentDate" name="paymentDate" class="form-control" type="date" th:min="${dateTime}" placeholder="dd/mm/yyyy">
+        </div>
+      </div>
+    </div>
+  </form>
+  <br>
+  <button id="addPurchase" name ="addPurchase" class="btn btn-primary">Add Supplier</button>
+    <button id="submit" class="btn btn-primary">Submit</button>
+</div >
+<div class="container">
+  <table class="table" id="purchaseTable">
+    <thead>
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">Inv Date</th>
+      <th scope="col">Supplier</th>
+      <th scope="col">Vehicle No</th>
+      <th scope="col">Type</th>
+      <th scope="col">Qty</th>
+      <th scope="col">FAT</th>
+      <th scope="col">SNF</th>
+      <th scope="col">Ts Rate</th>
+      <th scope="col">Ltr Rate</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Pay Status</th>
+      <th scope="col">Bank Name</th>
+      <th scope="col">IFSC</th>
+      <th scope="col">Pay Date</th>
+      <th scope="col">Code</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody >
+  </table>
+</div>
+<div th:replace="fragments/navbar :: navbar_footer"></div>
+</body>
+<script>
+$(document).ready(function() {
+  $('#invDate').val(new Date().toISOString().slice(0, 10));
+    $('#paymentDate').val(new Date().toISOString().slice(0, 10));
+$("#hide").hide();
+});
+$(#invDate
+    // add prod start
+$('#addPurchase').click(function() {
+var slNo=$("#slNo").val();
+var selectedValue = $("#supplierName option:selected").text();
+var fields = selectedValue.split(' - ');
+var supplierName = fields[0];
+var supplierCode = fields[1];
+//alert(supplierName);
+//alert(supplierCode);
+var selectedValue = $("#bankName option:selected").text();
+var fields = selectedValue.split(' - ');
+var bankName = fields[0];
+var bankIfsc = fields[1];
+alert(bankName);
+alert(bankIfsc);
+var invDate= $("#invDate").val();
+ //alert(invDate);
+var supplierName= $("#supplierName").val();
+ //alert(supplierName);
+ var vehicleNo= $("#vehicleNo").val();
+ //alert(vehicleNo);
+ var milkType= $("#milkType").val();
+//alert(milkType);
+var quantity= $("#quantity").val();
+// alert(quantity);
+var fatP= $("#fatP").val();
+if (isNaN(fatP) || fatP < 4 || fatP > 5) {
+    alert("Fat should be 4 to 5");
+    return;
+  }
+//alert(fatP);
+ var snfP = $("#snfP").val();
+ if (isNaN(snfP) || snfP < 5 || snfP > 12) {
+    alert("Snf should be 5 to 12");
+    return;
+  }
+ //alert(snfP);
+var tsRate= $("#tsRate").val();
+if (isNaN(tsRate) || tsRate < 300 || tsRate > 400) {
+    alert("TsRate should be 300 to 400");
+    return;
+  }
+//alert(tsRate);
+
+var bankName= $("#bankName").val();
+//alert(bankName);
+<!--var bankIfsc= $("#bankIfsc").val();-->
+<!--//alert(bankIfsc);-->
+var paymentStatus= $("#paymentStatus").val();
+//alert(paymentStatus);
+var ltrRate = ((parseFloat(fatP)+parseFloat(snfP))*parseFloat(tsRate)/100);
+ //alert(ltrRate);
+var amt= ((parseFloat(ltrRate))*quantity).toFixed(2);
+//alert(amt);
+var paymentDate= $("#paymentDate").val();
+ //alert(paymentDate);
+var code=supplierCode;
+//alert(code);
+var ifsc=bankIfsc;
+//alert(ifsc);
+$("#purchaseTable").append('<tr><td class="number">'+(slNo+1)+'</td><td>'+invDate+'</td><td>'+supplierName+'</td><td>'+vehicleNo+'</td><td>'+milkType+'</td><td>'+quantity+'</td><td>'+fatP+'</td><td>'+snfP+'</td><td>'+tsRate+'</td><td>'+ltrRate+'</td><td>'+amt+'</td><td>'+paymentStatus+'</td><td>'+bankName+'</td><td>'+ifsc+'</td><td>'+paymentDate+'</td><td>'+code+'</td></tr>');
+    $("td.number").each(function(i,v) {
+    $(v).text(i + 1);
+});
+    });
+    // add prod end
+
+</script>
+<script>
+$('#submit').click(function() {
+var purchaseOrder = [];
+var slNo=$("#slNo").html();
+//alert(slNo);
+var invDate=$("#invDate").val();
+//alert(invDate);
+var supplierName=$("#supplierName").val();
+//alert(supplierName);
+var vehicleNo=$("#svehicleNo").val();
+//alert(vehicleNo);
+var milkType= $("#milkType").val();
+//alert(milkType);
+var quantity=$("#quantity").val();
+//alert(quantity);
+var fatP= $("#fatP").val();
+<!--if (isNaN(fatP) || fatP < 4 || fatP > 5) {-->
+<!--    alert("Input not valid");-->
+<!--    return;-->
+<!--  }-->
+//alert(fatP);
+var snfP = $("#snfP").val();
+//alert(snfP);
+var tsRate= $("#tsRate").val();
+//alert(tsRate);
+var ltrRate=$("#ltrRate").text();
+//alert(ltrRate);
+var amt=$("#amt").text();
+//alert(amt);
+var bankName= $("#bankName").val();
+//alert(bankName);
+var ifsc= $("#ifsc").val();
+//alert(bankName);
+var paymentStatus= $("#paymentStatus").val();
+//alert( paymentStatus);
+var paymentDate= $("#paymentDate").val();
+//alert( paymentDate);
+var code=$("#code").val();
+//alert(code);
+$('#purchaseTable tr:not(:has(th))').each(function() {
+var slNo = $(this).find("td").eq(0).html();
+var invDate = $(this).find("td").eq(1).html();
+var supplierName = $(this).find("td").eq(2).html();
+var vehicleNo = $(this).find("td").eq(3).html();
+var  milkType = $(this).find("td").eq(4).html();
+var quantity =  $(this).find("td").eq(5).html();
+var fatP = $(this).find("td").eq(6).html();
+var snfP = $(this).find("td").eq(7).html();
+var tsRate = $(this).find("td").eq(8).html();
+var ltrRate = $(this).find("td").eq(9).html();
+var amt = $(this).find("td").eq(10).html();
+var  paymentStatus = $(this).find("td").eq(11).html();
+var  bankName = $(this).find("td").eq(12).html();
+var  ifsc = $(this).find("td").eq(13).html();
+var  paymentDate = $(this).find("td").eq(14).html();
+var code= $(this).find("td").eq(15).html();
+purchaseOrder.push({
+           slNo:slNo,
+           invDate:invDate,
+           supplier:supplierName,
+           vehicleNo:vehicleNo,
+           milkType:milkType,
+           quantity:quantity,
+           fatP:fatP,
+           snfP:snfP,
+           tsRate:tsRate,
+           ltrRate :ltrRate,
+           amt :amt,
+           paymentStatus:paymentStatus,
+           bankName:bankName,
+           ifsc : ifsc,
+           paymentDate :paymentDate,
+           code:code
+
+});
+});
+var json = JSON.stringify(purchaseOrder);
+alert(json);
+ $.ajax({
+url: '/purchaseOrderNew',
+    method: 'POST',
+        contentType : 'application/json; charset=utf-8',
+        data: JSON.stringify(purchaseOrder),
+success: function(data) {
+//alert("Data Saved Successfully !!!");
+window.location.replace ("/purchase");
+}
+});
+}); // end
+
+</script>
+<script>
+$('#paymentStatus').change(function () {
+var paymentStatus= $("#paymentStatus").val();
+//alert(paymentStatus);
+    if(paymentStatus=='Received'){
+    $("#hide").show();
+   }
+   else{
+$("#hide").hide();
+     }
+     });
+</script>
+</html>
