@@ -191,9 +191,16 @@ input#quantity{
       <input id="invDate" name="invDate" class="form-control" type="date" th:min="${dateTime}" placeholder="dd/mm/yyyy">
     </div>
     <div class="col">
+      <label for="invNo">Inv No</label>
+      <select id="invNo" class="form-control" name="invNo">
+        <option> --- Select Inv No ---</option>
+        <option th:each="i : ${supplier}" th:value="${i.supplierCode}"><span th:text="${i.supplierCode}"></span>-</option>
+      </select>
+    </div>
+    <div class="col">
       <label for="supplierName">Supplier Name</label>
       <select id="supplierName" class="form-control" name="supplierName">
-        <option> --- Select Supplier Name ---</option>
+        <option value="">Select Supplier </option>
         <option th:each="i : ${supplier}" th:value="${i.supplierName}"><span th:text="${i.supplierName}"></span> - <span
                 th:text="${i.supplierCode}"></span></option>
       </select>
@@ -201,7 +208,7 @@ input#quantity{
     <div class="col">
       <label for="vehicleNo">VehicleNo</label>
       <select id="vehicleNo" class="form-control" name="vehicleNo">
-        <option>Select VehicleNo</option>
+        <option value="">Select VehicleNo</option>
         <option th:each="i : ${vehicle}" th:value="${i.vehicleNo}"><span th:text="${i.vehicleNo}"></span></option>
       </select>
     </div>
@@ -259,10 +266,10 @@ input#quantity{
     <div class="col-2">
       <label for="paymentStatus">Payment Status</label>
       <select id="paymentStatus" class="form-control" name="paymentStatus" >
-        <option value="">-- SELECT --</option>
+        <option value="Invoice Not Sent">Invoice Not Sent</option>
         <option value="Received">Received</option>
         <option value="Pending">Pending</option>
-        <option value="Invoice Not Sent">Invoice Not Sent</option>
+
       </select>
     </div>
   </div>
@@ -271,7 +278,7 @@ input#quantity{
         <div class="col-3">
           <label for="bankName">Bank</label>
           <select id="bankName" class="form-control" name="bankName">
-            <option> --- Select Bank Name ---</option>
+            <option value=""> --- Select Bank Name ---</option>
             <option th:each="i : ${bank}" th:value="${i.bankName}"><span th:text="${i.bankName}"></span> - <span
                     th:text="${i.bankIfsc}"></span></option>
           </select>
@@ -284,7 +291,7 @@ input#quantity{
     </div>
   </form>
   <br>
-  <button id="addPurchase" name ="addPurchase" class="btn btn-primary">Add Supplier</button>
+  <button id="addPurchase" name ="addPurchase" class="btn btn-primary">Add PurchaseOrder</button>
     <button id="submit" class="btn btn-primary">Submit</button>
 </div >
 <div class="container">
@@ -292,7 +299,7 @@ input#quantity{
     <thead>
     <tr>
       <th scope="col">S.No</th>
-      <th scope="col">Inv Date</th>
+      <th scope="col">PO Date</th>
       <th scope="col">Supplier</th>
       <th scope="col">Vehicle No</th>
       <th scope="col">Type</th>
@@ -321,27 +328,38 @@ $(document).ready(function() {
     $('#paymentDate').val(new Date().toISOString().slice(0, 10));
 $("#hide").hide();
 });
-$(#invDate
     // add prod start
 $('#addPurchase').click(function() {
 var slNo=$("#slNo").val();
 var selectedValue = $("#supplierName option:selected").text();
 var fields = selectedValue.split(' - ');
 var supplierName = fields[0];
-var supplierCode = fields[1];
+alert(supplierName);
+$("#supplierName").val();
+var supplierName =$("#supplierName").val();
 //alert(supplierName);
+if(supplierName==null||supplierName==""){
+alert("Please Select Supplier!!!");
+return;
+}
+
+var supplierCode = fields[1];
 //alert(supplierCode);
 var selectedValue = $("#bankName option:selected").text();
 var fields = selectedValue.split(' - ');
 var bankName = fields[0];
 var bankIfsc = fields[1];
-alert(bankName);
-alert(bankIfsc);
+//alert(bankName);
+//alert(bankIfsc);
 var invDate= $("#invDate").val();
  //alert(invDate);
 var supplierName= $("#supplierName").val();
  //alert(supplierName);
  var vehicleNo= $("#vehicleNo").val();
+ if(vehicleNo==null||vehicleNo==""){
+alert("Please Select vehicle No!!!");
+return;
+}
  //alert(vehicleNo);
  var milkType= $("#milkType").val();
 //alert(milkType);
@@ -367,11 +385,18 @@ if (isNaN(tsRate) || tsRate < 300 || tsRate > 400) {
 //alert(tsRate);
 
 var bankName= $("#bankName").val();
+<!--if(bankName==null||bankName==""){-->
+<!--alert("Please Select Bank Name!!!");-->
+<!--return;-->
+<!--}-->
 //alert(bankName);
-<!--var bankIfsc= $("#bankIfsc").val();-->
+
+var bankIfsc= $("#bankIfsc").val();
+
 <!--//alert(bankIfsc);-->
 var paymentStatus= $("#paymentStatus").val();
-//alert(paymentStatus);
+
+alert(paymentStatus);
 var ltrRate = ((parseFloat(fatP)+parseFloat(snfP))*parseFloat(tsRate)/100);
  //alert(ltrRate);
 var amt= ((parseFloat(ltrRate))*quantity).toFixed(2);
@@ -381,6 +406,7 @@ var paymentDate= $("#paymentDate").val();
 var code=supplierCode;
 //alert(code);
 var ifsc=bankIfsc;
+
 //alert(ifsc);
 $("#purchaseTable").append('<tr><td class="number">'+(slNo+1)+'</td><td>'+invDate+'</td><td>'+supplierName+'</td><td>'+vehicleNo+'</td><td>'+milkType+'</td><td>'+quantity+'</td><td>'+fatP+'</td><td>'+snfP+'</td><td>'+tsRate+'</td><td>'+ltrRate+'</td><td>'+amt+'</td><td>'+paymentStatus+'</td><td>'+bankName+'</td><td>'+ifsc+'</td><td>'+paymentDate+'</td><td>'+code+'</td></tr>');
     $("td.number").each(function(i,v) {
