@@ -190,13 +190,13 @@ input#quantity{
       <label for="invDate">InvoiceDate</label>
       <input id="invDate" name="invDate" class="form-control" type="date" th:min="${dateTime}" placeholder="dd/mm/yyyy">
     </div>
-    <div class="col">
-      <label for="invNo">Inv No</label>
-      <select id="invNo" class="form-control" name="invNo">
-        <option> --- Select Inv No ---</option>
-        <option th:each="i : ${supplier}" th:value="${i.supplierCode}"><span th:text="${i.supplierCode}"></span>-</option>
-      </select>
-    </div>
+<!--    <div class="col">-->
+<!--      <label for="invNo">Inv No</label>-->
+<!--      <select id="invNo" class="form-control" name="invNo">-->
+<!--        <option> -&#45;&#45; Select Inv No -&#45;&#45;</option>-->
+<!--        <option th:each="i : ${supplier}" th:value="${i.supplierCode}"><span th:text="${i.supplierCode}"></span>-</option>-->
+<!--      </select>-->
+<!--    </div>-->
     <div class="col">
       <label for="supplierName">Supplier Name</label>
       <select id="supplierName" class="form-control" name="supplierName">
@@ -260,6 +260,9 @@ input#quantity{
               class="form-control"  maxlength="300-400" pattern="\d{5}"
       />
     </div>
+    <div>
+      <input type="text" id="ssno" name="ssno" value="0"/>
+    </div>
     </div>
     <br>
     <div class="row auto-align">
@@ -269,12 +272,12 @@ input#quantity{
         <option value="Invoice Not Sent">Invoice Not Sent</option>
         <option value="Received">Received</option>
         <option value="Pending">Pending</option>
-
       </select>
     </div>
   </div>
-    <div id="hide">
+
       <div class="row auto-align">
+        <div id="hide">
         <div class="col-3">
           <label for="bankName">Bank</label>
           <select id="bankName" class="form-control" name="bankName">
@@ -288,7 +291,7 @@ input#quantity{
           <input id="paymentDate" name="paymentDate" class="form-control" type="date" th:min="${dateTime}" placeholder="dd/mm/yyyy">
         </div>
       </div>
-    </div>
+   </div>
   </form>
   <br>
   <button id="addPurchase" name ="addPurchase" class="btn btn-primary">Add PurchaseOrder</button>
@@ -299,6 +302,7 @@ input#quantity{
     <thead>
     <tr>
       <th scope="col">S.No</th>
+      <th scope="col">Inv No</th>
       <th scope="col">PO Date</th>
       <th scope="col">Supplier</th>
       <th scope="col">Vehicle No</th>
@@ -327,26 +331,32 @@ $(document).ready(function() {
   $('#invDate').val(new Date().toISOString().slice(0, 10));
     $('#paymentDate').val(new Date().toISOString().slice(0, 10));
 $("#hide").hide();
+<!--$("#bankName").hide();-->
+<!--$("#paymentDate").hide();-->
+<!--$("tr").each(function() {-->
+<!--    $(this).children("td:eq(12)").hide();-->
+<!--    $(this).children("td:eq(13)").hide();-->
+<!--});-->
 });
     // add prod start
 $('#addPurchase').click(function() {
 var slNo=$("#slNo").val();
+
 var selectedValue = $("#supplierName option:selected").text();
 var fields = selectedValue.split(' - ');
 var supplierName = fields[0];
-alert(supplierName);
 $("#supplierName").val();
 var supplierName =$("#supplierName").val();
-//alert(supplierName);
 if(supplierName==null||supplierName==""){
 alert("Please Select Supplier!!!");
 return;
 }
-
 var supplierCode = fields[1];
 //alert(supplierCode);
 var selectedValue = $("#bankName option:selected").text();
-var fields = selectedValue.split(' - ');
+//alert(selectedValue);
+var fields = selectedValue.split('-');
+
 var bankName = fields[0];
 var bankIfsc = fields[1];
 //alert(bankName);
@@ -360,61 +370,53 @@ var supplierName= $("#supplierName").val();
 alert("Please Select vehicle No!!!");
 return;
 }
- //alert(vehicleNo);
  var milkType= $("#milkType").val();
-//alert(milkType);
 var quantity= $("#quantity").val();
-// alert(quantity);
 var fatP= $("#fatP").val();
 if (isNaN(fatP) || fatP < 4 || fatP > 5) {
     alert("Fat should be 4 to 5");
     return;
   }
-//alert(fatP);
  var snfP = $("#snfP").val();
  if (isNaN(snfP) || snfP < 5 || snfP > 12) {
     alert("Snf should be 5 to 12");
     return;
   }
- //alert(snfP);
 var tsRate= $("#tsRate").val();
 if (isNaN(tsRate) || tsRate < 300 || tsRate > 400) {
     alert("TsRate should be 300 to 400");
     return;
   }
-//alert(tsRate);
-
-var bankName= $("#bankName").val();
-<!--if(bankName==null||bankName==""){-->
-<!--alert("Please Select Bank Name!!!");-->
-<!--return;-->
-<!--}-->
-//alert(bankName);
-
-var bankIfsc= $("#bankIfsc").val();
-
-<!--//alert(bankIfsc);-->
 var paymentStatus= $("#paymentStatus").val();
+if(paymentStatus!=='Received'){
+//alert("Not Received");
+ bankName = '-';
+ bankIfsc = '-';
+}
 
-alert(paymentStatus);
 var ltrRate = ((parseFloat(fatP)+parseFloat(snfP))*parseFloat(tsRate)/100);
- //alert(ltrRate);
 var amt= ((parseFloat(ltrRate))*quantity).toFixed(2);
-//alert(amt);
 var paymentDate= $("#paymentDate").val();
  //alert(paymentDate);
 var code=supplierCode;
-//alert(code);
+<!--var bankName= $("#bankName").val();-->
+<!-- if(bankName==null||bankName==""){-->
+<!--alert("Please Select bankName!!!");-->
+<!--return;-->
+<!--}-->
 var ifsc=bankIfsc;
+var ono= $("#ssno").val();
+alert(ono);
+var one= parseInt(ono)+1;
+alert(one);
+$("#ssno").val(one);
 
-//alert(ifsc);
-$("#purchaseTable").append('<tr><td class="number">'+(slNo+1)+'</td><td>'+invDate+'</td><td>'+supplierName+'</td><td>'+vehicleNo+'</td><td>'+milkType+'</td><td>'+quantity+'</td><td>'+fatP+'</td><td>'+snfP+'</td><td>'+tsRate+'</td><td>'+ltrRate+'</td><td>'+amt+'</td><td>'+paymentStatus+'</td><td>'+bankName+'</td><td>'+ifsc+'</td><td>'+paymentDate+'</td><td>'+code+'</td></tr>');
+$("#purchaseTable").append('<tr><td class="number">'+(slNo+1)+'</td><td>'+code+'_'+invDate+'_'+one+'</td><td>'+invDate+'</td><td>'+supplierName+'</td><td>'+vehicleNo+'</td><td>'+milkType+'</td><td>'+quantity+'</td><td>'+fatP+'</td><td>'+snfP+'</td><td>'+tsRate+'</td><td>'+ltrRate+'</td><td>'+amt+'</td><td>'+paymentStatus+'</td><td>'+bankName+'</td><td>'+ifsc+'</td><td>'+paymentDate+'</td><td>'+code+'</td></tr>');
     $("td.number").each(function(i,v) {
     $(v).text(i + 1);
 });
     });
     // add prod end
-
 </script>
 <script>
 $('#submit').click(function() {
@@ -432,23 +434,19 @@ var milkType= $("#milkType").val();
 var quantity=$("#quantity").val();
 //alert(quantity);
 var fatP= $("#fatP").val();
-<!--if (isNaN(fatP) || fatP < 4 || fatP > 5) {-->
-<!--    alert("Input not valid");-->
-<!--    return;-->
-<!--  }-->
 //alert(fatP);
 var snfP = $("#snfP").val();
 //alert(snfP);
 var tsRate= $("#tsRate").val();
 //alert(tsRate);
 var ltrRate=$("#ltrRate").text();
-//alert(ltrRate);
+alert(ltrRate);
 var amt=$("#amt").text();
-//alert(amt);
+alert(amt);
 var bankName= $("#bankName").val();
 //alert(bankName);
 var ifsc= $("#ifsc").val();
-//alert(bankName);
+//alert(ifsc);
 var paymentStatus= $("#paymentStatus").val();
 //alert( paymentStatus);
 var paymentDate= $("#paymentDate").val();
@@ -513,9 +511,12 @@ var paymentStatus= $("#paymentStatus").val();
 //alert(paymentStatus);
     if(paymentStatus=='Received'){
     $("#hide").show();
+
    }
    else{
 $("#hide").hide();
+<!--$("#bankName").hide();-->
+<!--$("#paymentDate").hide();-->
      }
      });
 </script>
