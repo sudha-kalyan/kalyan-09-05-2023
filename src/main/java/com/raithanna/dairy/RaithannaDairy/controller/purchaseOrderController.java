@@ -262,5 +262,42 @@ public class purchaseOrderController {
         System.out.println("Excel Size -- " + list.size());
         return "/purchaseView";
     }
+    @GetMapping("/purchasePdfData")
+    public String purchasePdfForm(Model model, HttpSession session) {
+        if (session.getAttribute("loggedIn").equals("yes")) {
+            List<supplier> Suppliers = supplierRepository.findByOrderByIdDesc();
+
+            purchaseOrder po = new purchaseOrder();
+            model.addAttribute("purchase", po);
+            model.addAttribute("supplier", Suppliers);
+
+
+            return "purchasePdf";
+        }
+        List messages = new ArrayList<>();
+        messages.add("Login First");
+        model.addAttribute("messages", messages);
+        return "redirect:/loginPage";
+    }
+    @PostMapping("/purchasePdfData")
+    public String purchasePdfData(@RequestParam Map<String, String> body, Model model, HttpServletResponse response, HttpServletRequest request) {
+        System.out.println(body);
+        purchaseOrder po = new purchaseOrder();
+        System.out.println("invNo:" + body.get("No"));
+        po.setSupplier(body.get("supplierName"));
+        po.setInvDate(LocalDate.parse(body.get("invDate")));
+        // po.setSlNo(body.get("slNo"));
+        // po.setSnfP(body.get("snfP"));
+
+        // excel data list
+        List<purchaseOrder> list = purchaseOrderRepository.findBySupplierAndInvDateBetween(po.getSupplier(), po.getInvDate(), po.getRecDate());
+
+        String header[] = {"invDate","supplier","vehicleNo","quantity","fatP","snfP","tsRate","milkType","bankName","paymentStatus","vehicleNo"};
+
+        DownloadCsvReport.getCsvReportDownload(response, header, list, "invoice_data.csv");
+
+        System.out.println("Excel Size -- "+list.size());
+        return "redirect:/purchaseExcelData";
+    }
 
 }

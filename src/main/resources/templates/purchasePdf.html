@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+          integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+          integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+          crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title></title>
+
+  <style>
+  .navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-6px;
+}
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+
+table, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding:10px 0px;
+  text-align: center;
+  vertical-align: text-top;
+}
+table,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding:10px 0px;
+  text-align: left;
+  vertical-align: text-top;
+}
+.box-wrapper {
+			height: 50vh;
+			width: 90%;
+			display: flex;
+			flex-direction: row;
+			text-align: left;
+		}
+p.ex1 {
+  margin-left: 80%;
+}
+p.ex2 {
+  margin-left: 0%;
+}
+p.ex3 {
+  margin-left: 46%;
+}
+p.ex4 {
+  margin-left: 50%;
+}
+hr {
+  background-color: #0000FF;
+  height: 2px;
+  border:none;
+}
+th {
+  background: lightblue;
+}
+.header_bar {
+    position: top;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  background-color: blue;
+    text-align: center;
+    }
+
+.footer_bar {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: blue;
+   text-align: center;
+}
+</style>
+  <div th:replace="fragments/navbar :: navbar_header"></div>
+  <div th:replace="fragments/navbar :: navbar_menu"></div>
+  <div class="container">
+    <div th:replace="fragments/message :: message_html"></div>
+  </div>
+</head>
+<body>
+<h1 class="company_name"><center><font color="green ">
+  <b>L.S MILK TRADERS</b> </font></center></h1>
+<!--  <p class="ex1"><font color="#000080 ">-->
+<!--    Phone:9949124471</font></p>-->
+<!--  <p class="ex1"><font color="#000080">Email:LSMILKTraders@gmail.com</font> </p>-->
+  <div><center><font color="red ">
+    <b>2-2-1183/1/3 SIDDHARTHA CASTLE SHIVAM ROAD NEW NALLAKUNTA HYDERABAD - 500044</b> </font></center></div>
+
+<hr width="95%" size="40" color="blue">
+<form th:action="@{/purchasePdfData}" th:object="${purchase}" method="POST">
+<div class="container-fluid">
+  <div class="col-md-0 offset-md-0 col-md-0 offset-md-1">
+<!--    <p class="ex2">Pan.No:</p>-->
+<!--    <p class="ex3">Inv.No:</p>-->
+  <caption>Customer Name & Billing Address</caption>
+  </div>
+  <div class="col-md-0  row-md-0 col-lg-0 col-xl-0 offset-xl-6">
+    <caption>Customer Name & Billing Address</caption>
+  </div>
+  <tr class="no-border-item">
+
+    <td></td>
+  </tr>
+  <div  class="col-md-5 col-lg-20 col-xl-1 offset-xl-1 bottom-text-2">
+  <tr class="tabletitle">
+    <th>Type</th>
+  </tr>
+  </div>
+  <div class="col-md-5 col-lg-20 col-xl-1 offset-xl-6">
+    <tr class="tabletitle">
+      <th>Type</th>
+    </tr>
+  </div>
+  <center>
+
+<div class="box-wrapper ">
+
+<table style="width:100%" height="100%" >
+
+  <tr>
+    <th class="align_right">Customer Name & Billing Address</th>
+  </tr>
+  <tr>
+    <td><p>Destination:</p>
+      <p class="ex2">Shipping Mode:</p></td>
+  </tr>
+</table>
+  <table style="width:100%" height="100%">
+    <tr>
+      <th class="align_right-bottom"> Inv.No</th>
+    </tr>
+    <tr>
+      <td colspan="0"><p class="ex2">Ref Number:</p>
+        <p class="ex2">Ref Date</p></td>
+    </tr>
+  </table>
+</div>
+    <div class="box-wrapper ">
+
+      <table style="width:100%" height="100%" >
+
+
+        <tr>
+          <td><p>Destination:</p>
+            <p class="ex2">Shipping Mode:</p></td>
+        </tr>
+      </table>
+      <table style="width:100%" height="100%">
+
+        <tr>
+          <td colspan="0"><p class="ex2">Ref Number:</p>
+            <p class="ex2">Ref Date</p></td>
+        </tr>
+      </table>
+    </div>
+<div class="box-wrapper ">
+  <table style="width:100%" height="100%">
+    <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Description</th>
+      <th>FAT</th>
+      <th>SNF</th>
+      <th>Qty</th>
+      <th>Unit</th>
+      <th>Item Rate</th>
+      <th>Item Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td rowspan="11"></td>
+      <td rowspan="11"></td>
+      <td rowspan="11"></td>
+      <td rowspan="11"></td>
+      <td rowspan="11"></td>
+      <td rowspan="11"></td>
+      <td rowspan="11"></td>
+      <td rowspan="11"></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <td colspan="8" width="90%" height="90%"></td>
+
+<!--    <tr>-->
+<!--      <td colspan="1" rowspan="1"> </td>-->
+
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td colspan="4" rowspan="2"> L </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td colspan="2"></td>-->
+<!--    </tr>-->
+
+    </tbody>
+
+  </table>
+
+</div>
+    <table style="width:90%" height="90%" >
+
+      <tr>
+        <td><p></p>
+          <p class="ex2"></p></td>
+      </tr>
+    </table>
+    <table style="width:90%" height="90%" >
+
+
+      <tr>
+        <td><p></p>
+          <p class="ex2"></p><b>Declaration:</b></td>
+      </tr>
+    </table>
+    <table style="width:90%" height="90%" >
+
+
+      <tr>
+        <td><p></p>
+          <p class="ex2"></p></td>
+      </tr>
+    </table>
+
+  </center>
+</div>
+</form>
+<div class="invoice-footer">
+  <p><b><center>Branch Office:H.No:48-11/1-5/8B,Floor1,Vallabhaneni Arcade,Guttikonda Dhanjuya Rao Street Currency Nagar,Vijayawada-520008-Andhra Pradesh</center></b></p>
+</div>
+  <div th:replace="fragments/navbar :: navbar_footer"></div>
+</body>
+</html>
+
