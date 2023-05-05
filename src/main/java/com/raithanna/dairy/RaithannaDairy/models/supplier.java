@@ -26,5 +26,11 @@ public class supplier {
    private String SupEmail;
    private String supMobile;
     private String pinCode;
+    private Integer distance;
+    private String active = "";
+    private String remove;
+    private String sourcedata;
+    private Integer suplSerial = 0;
+    private String GST = "";
 
 }

@@ -185,7 +185,7 @@ public class purchaseOrderController {
                 po.setSlNo(list.getSlNo());
                 po.setInvDate(list.getInvDate());
                 po.setSupplier(list.getSupplier());
-                po.setVehicleNo(list.getVehicleNo());
+                po.setVehNumber(list.getVehNumber());
                 po.setMilkType(list.getMilkType());
                 po.setQuantity(list.getQuantity());
                 po.setFatP(list.getFatP());
@@ -194,9 +194,8 @@ public class purchaseOrderController {
                 po.setLtrRate(list.getLtrRate());
                 po.setAmt(list.getAmt());
                 po.setPaymentStatus(list.getPaymentStatus());
-                po.setBankName(list.getBankName());
-                po.setIfsc(list.getIfsc());
-                po.setPaymentDate(list.getPaymentDate());
+                po.setBankIfsc(list.getBankIfsc());
+                po.setRecDate(list.getRecDate());
                 po.setCode(list.getCode());
                 po.setInvNo(invNo+subOrder);
 

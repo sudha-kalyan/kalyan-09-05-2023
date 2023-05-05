@@ -83,7 +83,7 @@ input#invDate{
   padding:2px;
   background-colour:#fff;
   }
-  input#paymentDate{
+  input#recDate{
   width:150px;
   border:1px solid blue;
   border-radius:2px
@@ -214,8 +214,8 @@ input#quantity{
       </select>
     </div>
     <div class="col">
-      <label for="vehicleNo">VehicleNo</label>
-      <select id="vehicleNo" class="form-control" name="vehicleNo">
+      <label for="vehNumber">VehicleNo</label>
+      <select id="vehNumber" class="form-control" name="vehNumber">
         <option value="">Select VehicleNo</option>
         <option th:each="i : ${vehicle}" th:value="${i.vehicleNo}"><span th:text="${i.vehicleNo}"></span></option>
       </select>
@@ -288,16 +288,16 @@ input#quantity{
       <div class="row auto-align">
         <div id="hide">
         <div class="col-3">
-          <label for="bankName">Bank</label>
-          <select id="bankName" class="form-control" name="bankName">
+          <label for="bankIfsc">Bank</label>
+          <select id="bankIfsc" class="form-control" name="bankIfsc">
             <option value=""> --- Select Bank Name ---</option>
-            <option th:each="i : ${bank}" th:value="${i.bankName}"><span th:text="${i.bankName}"></span> - <span
-                    th:text="${i.bankIfsc}"></span></option>
+            <option th:each="i : ${bank}" th:value="${i.ifsc}"><span th:text="${i.ifsc}"></span>
+                    </option>
           </select>
         </div>
         <div class="col">
-          <label for="paymentDate">PaymentDate</label>
-          <input id="paymentDate" name="paymentDate" class="form-control" type="date" th:min="${dateTime}" placeholder="dd/mm/yyyy">
+          <label for="recDate">PaymentDate</label>
+          <input id="recDate" name="recDate" class="form-control" type="date" th:min="${dateTime}" placeholder="dd/mm/yyyy">
         </div>
       </div>
    </div>
@@ -323,7 +323,6 @@ input#quantity{
       <th scope="col">Ltr Rate</th>
       <th scope="col">Amount</th>
       <th scope="col">Pay Status</th>
-      <th scope="col">Bank Name</th>
       <th scope="col">IFSC</th>
       <th scope="col">Pay Date</th>
       <th scope="col">Code</th>
@@ -362,20 +361,22 @@ return;
 }
 var supplierCode = fields[1];
 //alert(supplierCode);
-var selectedValue = $("#bankName option:selected").text();
+var selectedValue = $("#bankIfsc option:selected").text();
 //alert(selectedValue);
 var fields = selectedValue.split('-');
 
-var bankName = fields[0];
-var bankIfsc = fields[1];
+//var bankName = fields[0];
+var ifsc = fields[0];
 //alert(bankName);
-//alert(bankIfsc);
+alert(ifsc);
 var invDate= $("#invDate").val();
  //alert(invDate);
+ var bankIfsc=ifsc;
+ alert(bankIfsc);
 var supplierName= $("#supplierName").val();
  //alert(supplierName);
- var vehicleNo= $("#vehicleNo").val();
- if(vehicleNo==null||vehicleNo==""){
+ var vehNumber= $("#vehNumber").val();
+ if(vehNumber==null||vehNumber==""){
 alert("Please Select vehicle No!!!");
 return;
 }
@@ -399,14 +400,14 @@ if (isNaN(tsRate) || tsRate < 300 || tsRate > 400) {
 var paymentStatus= $("#paymentStatus").val();
 if(paymentStatus!=='Received'){
 //alert("Not Received");
- bankName = '-';
+ //bankName = '-';
  bankIfsc = '-';
 }
 
 var ltrRate = ((parseFloat(fatP)+parseFloat(snfP))*parseFloat(tsRate)/100);
 var amt= ((parseFloat(ltrRate))*quantity).toFixed(2);
-var paymentDate= $("#paymentDate").val();
- //alert(paymentDate);
+var recDate= $("#recDate").val();
+ //alert(recDate);
 var code=supplierCode;
 <!--var bankName= $("#bankName").val();-->
 <!-- if(bankName==null||bankName==""){-->
@@ -420,7 +421,7 @@ var one= parseInt(ono)+1;
 alert(one);
 $("#ssno").val(one);
 
-$("#purchaseTable").append('<tr><td class="number">'+(slNo+1)+'</td><td>'+code+'_'+invDate+'_'+one+'</td><td>'+invDate+'</td><td>'+supplierName+'</td><td>'+vehicleNo+'</td><td>'+milkType+'</td><td>'+quantity+'</td><td>'+fatP+'</td><td>'+snfP+'</td><td>'+tsRate+'</td><td>'+ltrRate+'</td><td>'+amt+'</td><td>'+paymentStatus+'</td><td>'+bankName+'</td><td>'+ifsc+'</td><td>'+paymentDate+'</td><td>'+code+'</td></tr>');
+$("#purchaseTable").append('<tr><td class="number">'+(slNo+1)+'</td><td>'+code+'_'+invDate+'_'+one+'</td><td>'+invDate+'</td><td>'+supplierName+'</td><td>'+vehNumber+'</td><td>'+milkType+'</td><td>'+quantity+'</td><td>'+fatP+'</td><td>'+snfP+'</td><td>'+tsRate+'</td><td>'+ltrRate+'</td><td>'+amt+'</td><td>'+paymentStatus+'</td><td>'+ifsc+'</td><td>'+recDate+'</td><td>'+code+'</td></tr>');
     $("td.number").each(function(i,v) {
     $(v).text(i + 1);
 });
@@ -436,7 +437,7 @@ var invDate=$("#invDate").val();
 //alert(invDate);
 var supplierName=$("#supplierName").val();
 //alert(supplierName);
-var vehicleNo=$("#svehicleNo").val();
+var vehNumber=$("#vehNumber").val();
 //alert(vehicleNo);
 var milkType= $("#milkType").val();
 //alert(milkType);
@@ -452,21 +453,22 @@ var ltrRate=$("#ltrRate").text();
 alert(ltrRate);
 var amt=$("#amt").text();
 alert(amt);
-var bankName= $("#bankName").val();
-//alert(bankName);
 var ifsc= $("#ifsc").val();
-//alert(ifsc);
+//alert(bankIfsc)
+//var ifsc= $("#ifsc").val();
+alert(ifsc);
+var bankIfsc=ifsc;
 var paymentStatus= $("#paymentStatus").val();
 //alert( paymentStatus);
-var paymentDate= $("#paymentDate").val();
-//alert( paymentDate);
+var recDate= $("#recDate").val();
+//alert( recDate);
 var code=$("#code").val();
 //alert(code);
 $('#purchaseTable tr:not(:has(th))').each(function() {
 var slNo = $(this).find("td").eq(0).html();
 var invDate = $(this).find("td").eq(1).html();
 var supplierName = $(this).find("td").eq(2).html();
-var vehicleNo = $(this).find("td").eq(3).html();
+var vehNumber = $(this).find("td").eq(3).html();
 var  milkType = $(this).find("td").eq(4).html();
 var quantity =  $(this).find("td").eq(5).html();
 var fatP = $(this).find("td").eq(6).html();
@@ -475,15 +477,14 @@ var tsRate = $(this).find("td").eq(8).html();
 var ltrRate = $(this).find("td").eq(9).html();
 var amt = $(this).find("td").eq(10).html();
 var  paymentStatus = $(this).find("td").eq(11).html();
-var  bankName = $(this).find("td").eq(12).html();
-var  ifsc = $(this).find("td").eq(13).html();
-var  paymentDate = $(this).find("td").eq(14).html();
-var code= $(this).find("td").eq(15).html();
+var  bankIfsc = $(this).find("td").eq(12).html();
+var  recDate = $(this).find("td").eq(13).html();
+var code= $(this).find("td").eq(14).html();
 purchaseOrder.push({
            slNo:slNo,
            invDate:invDate,
            supplier:supplierName,
-           vehicleNo:vehicleNo,
+           vehNumber:vehNumber,
            milkType:milkType,
            quantity:quantity,
            fatP:fatP,
@@ -492,9 +493,8 @@ purchaseOrder.push({
            ltrRate :ltrRate,
            amt :amt,
            paymentStatus:paymentStatus,
-           bankName:bankName,
-           ifsc : ifsc,
-           paymentDate :paymentDate,
+           bankIfsc:bankIfsc,
+           recDate :recDate,
            code:code
 
 });

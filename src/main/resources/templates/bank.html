@@ -99,9 +99,19 @@
         <label> Bank IFSC Code</label>
         <input
                 type="text"
-                name="bankIfsc"
-                id="bankIfsc"
-                th:field="*{bankIfsc}"
+                name="ifsc"
+                id="ifsc"
+                th:field="*{ifsc}"
+                class="form-control"
+        />
+      </div>
+      <div class="col">
+        <label> Swift Code</label>
+        <input
+                type="text"
+                name="swift"
+                id="swift"
+                th:field="*{swift}"
                 class="form-control"
         />
       </div>
@@ -109,9 +119,9 @@
         <label> Branch Name</label>
         <input
                 type="text"
-                name="branchName"
-                id="branchName"
-                th:field="*{branchName}"
+                name="branch"
+                id="branch"
+                th:field="*{branch}"
                 class="form-control"
         />
       </div>

@@ -23,11 +23,15 @@ public class customer {
     @Id
     @GeneratedValue
     private Integer id;
-    private String name;
+    private String custName;
     private String code;
     @Max(10)
     private String mobileNo;
     private String Email;
     private int custno;
+    private String custAddr1;
+    private String custAddr2;
+    private String custAddr3;
+    private String custPostCode;
 
 }

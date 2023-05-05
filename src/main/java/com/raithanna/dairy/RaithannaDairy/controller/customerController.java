@@ -114,7 +114,7 @@ public class customerController {
         Map<String, String> respBody = new HashMap<>();
         System.out.println(body);
         customer Customer = customerRepository.findByCode(body.get("code"));
-        respBody.putIfAbsent("name", Customer.getName());
+        respBody.putIfAbsent("custName", Customer.getCustName());
         respBody.putIfAbsent("phoneNumber", Customer.getMobileNo());
         respBody.putIfAbsent("Email", Customer.getEmail());
         return ResponseEntity.ok(respBody);
@@ -125,7 +125,7 @@ public class customerController {
         Map<String, String> respBody = new HashMap<>();
         System.out.println(body);
         customer Customer = customerRepository.findByCode(body.get("code"));
-        Customer.setName(body.get("name"));
+        Customer.setCustName(body.get("custName"));
         Customer.setMobileNo(body.get("phone"));
         Customer.setEmail(body.get("email"));
         respBody.putIfAbsent("message", "success");

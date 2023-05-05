@@ -32,6 +32,14 @@ input#vehicleNo{
   padding:2px;
   background-colour:#fff;
   }
+  #capacity{
+  width:250px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:2px;
+  background-colour:#fff;
+  }
   .header_bar {
     position: top;
     left: 0;
@@ -65,15 +73,39 @@ input#vehicleNo{
   <form th:action="@{/vehicle}" th:object="${vehicle}" method="POST">
     <div class="row auto-align">
       <div class="col">
-        <label>VehicleNo</label>
-        <input
-                type="text"
-                name="vehicleNo"
-                id="vehicleNo"
-                th:field="*{vehicleNo}"
-                class="form-control"
-        />
+        <label>Vehicle Code</label>
+        <input   type="text"  id="vehCode"  th:field="*{vehCode}"  class="form-control"/>
       </div>
+      <div class="col">
+        <label>VehicleNo</label>
+        <input   type="text"  id="vehicleNo"  th:field="*{vehicleNo}"  class="form-control"/>
+      </div>
+      <div class="col">
+        <label>Chasis Number</label>
+        <input   type="text"  id="chasisNumber"  th:field="*{chasisNumber}"  class="form-control"/>
+      </div>
+      <div class="col">
+        <label>Owner</label>
+        <input   type="text"  id="owner"  th:field="*{owner}"  class="form-control"/>
+      </div>
+      <div class="col">
+        <label for=" capacity">Capacity</label>
+        <select id=" capacity" class="form-control" name=" capacity" >
+          <option value="9kl">9Kl</option>
+          <option value="15kl">15Kl</option>
+          <option value="20kl">20Kl</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="compartments">Campartments</label>
+        <select id="compartments" class="form-control" name="compartments" >
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+    </div>
+    <div class="row auto-align">
+
     </div>
     <br>
     <div class="box-footer">

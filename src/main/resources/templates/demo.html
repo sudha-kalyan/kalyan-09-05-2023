@@ -4,13 +4,13 @@
 
 
 <head>
-    <meta charset="ISO-8859-1">
-    <title></title>
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous">
-    <style>
+  <meta charset="ISO-8859-1">
+  <title></title>
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+  <style>
 .navbar-nav li:hover > ul.dropdown-menu {
     display: block;
 }
@@ -28,8 +28,8 @@
     transform: rotate(-90deg);
 }
 
- input#custName{
-  width:250px;
+ input#name{
+  width:300px;
   border:1px solid blue;
   border-radius:2px
   outline:0;
@@ -38,53 +38,25 @@
 
   }
  input#mobileNo{
-  width:250px;
+  width:300px;
   border:1px solid blue;
   border-radius:2px
   outline:0;
   padding:3px;
   background-colour:#fff;
+
   }
-  input#Email{
-  width:250px;
+
+  input#email{
+  width:300px;
   border:1px solid blue;
   border-radius:2px
   outline:0;
   padding:3px;
   background-colour:#fff;
+
   }
-input#custAddr1{
-  width:250px;
-  border:1px solid blue;
-  border-radius:2px
-  outline:0;
-  padding:3px;
-  background-colour:#fff;
-  }
-  input#custAddr2{
-  width:250px;
-  border:1px solid blue;
-  border-radius:2px
-  outline:0;
-  padding:3px;
-  background-colour:#fff;
-  }
-  input#custAddr3{
-  width:250px;
-  border:1px solid blue;
-  border-radius:2px
-  outline:0;
-  padding:3px;
-  background-colour:#fff;
-  }
-  input#custPostCode{
-  width:250px;
-  border:1px solid blue;
-  border-radius:2px
-  outline:0;
-  padding:3px;
-  background-colour:#fff;
-  }
+
 
 .header_bar {
     position: top;
@@ -94,85 +66,57 @@ input#custAddr1{
   background-color: blue;
     text-align: center;
     }
-.footer_bar {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: blue;
-   text-align: center;
-}
+
 
   </style>
-    <div th:replace="fragments/navbar :: navbar_header"></div>
-    <div th:replace="fragments/navbar :: navbar_menu"></div>
-    <div class="container">
-
-        <div th:replace="fragments/message :: message_html"></div>
-    </div>
 </head>
 <body style="background-color:#fff;">
+<div th:replace="fragments/navbar :: navbar_header"></div>
+<div th:replace="fragments/navbar :: navbar_menu"></div>
+<div class="container-fluid">
+  <div th:replace="fragments/message :: message_html"></div>
+</div>
 <div class ="container-fluid">
-    <div class="card-body">
-        <div class="col">
-<!--            <div class="col-lg-7 col-md-7 col-sm-3 container justify-content-middle card-body">-->
-                <h4 class = "text-middle"> <font color="#000080 ">
-                    <b>Create Customer</b> </font></h4>
-                <h1>
-                    <small th:text="${msg}" ></small>
-                </h1>
-                <hr>
-                <!--        <form  action="home" method="post"></form>-->
 
-                <form th:action="@{/createCustomer}" th:object = "${Custome}" method="POST">
-                    <div class="row auto-align">
-                        <div class="col">
-                            <label> Customer Name</label>
-                            <input type = "text"  id="custName"  name = "custName"  th:field = "*{custName}" class="form-control"  placeholder="Enter Customer Name"/>
-                        </div>
-                        <div class="col">
-                            <label> Mobile No</label>
-                            <input type="text" name="mobileNo" id="mobileNo"  th:field="*{mobileNo}" class="form-control"/>
-                        </div>
-                        <div class="col">
-                            <label> Email</label>
-                            <input type="text"  name="Email" id="Email" th:field="*{Email}" class="form-control"/>
-                        </div>
-                        <div class="col">
-                            <label> Address1</label>
-                            <input  type="text" name="custAddr1" id="custAddr1" th:field="*{custAddr1}"  class="form-control"/>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row auto-align">
-                        <br>
-                        <div class="col">
-                            <label> Address2</label>
-                            <input  type="text" name="custAddr2" id="custAddr2" th:field="*{custAddr2}"  class="form-control"/>
-                        </div>
-                        <div class="col">
-                            <label>Address3</label>
-                            <input type="text" name="custAddr3" id="custAddr3"  th:field="*{custAddr3}" class="form-control"/>
-                        </div>
-                        <div class="col-6">
-                            <label>Pin Code</label>
-                            <input type="text"  name="custPostCode" id="custPostCode" th:field="*{custPostCode}" class="form-control"/>
-                        </div>
-                    </div>
-                    <br>
-                    <div class = "box-footer">
-                        <button id="submit" type="" class = "btn btn-primary">
-                            Submit
-                        </button>
-                    </div>
+  <div class="card-body">
+    <div class="col">
+      <div class="col-lg-7 col-md-7 col-sm-3 container justify-content-middle card-body">
+        <h4 class = "text-middle"> <font color="#000080 ">
+          <b>Create Customer</b> </font></h4>
+        <h1>
+          <small th:text="${msg}" ></small>
+        </h1>
+        <hr>
+        <!--        <form  action="home" method="post"></form>-->
 
-                </form>
+        <form th:action="@{/createCustomer}" th:object = "${Custome}" method="POST">
+          <div class = "row auto-align">
+            <div class="col">
+              <label> Customer Name</label>
+              <input type = "text"  id="name"  name = "name"  th:field = "*{name}" class="form-control"  placeholder="Enter Customer Name"/>
             </div>
-        </div>
+            <div class="col">
+              <label> Customer MobileNo</label>
+              <input type = "text" name = "mobileNo" id   = "mobileNo"  th:field = "*{mobileNo}"  placeholder="Enter Customer MobileNo"/>
+            </div>
+            <div class="col">
+              <label> Customer Email </label>
+              <input type = "text"  id="email"  name = "Email" th:field = "*{Email}"  class="form-control"   placeholder="Enter Customer Email"/>
+            </div>
+          </div>
+          <div class = "box-footer">
+            <button id="submit" type="" class = "btn btn-primary">
+              Submit
+            </button>
+          </div>
 
+        </form>
+      </div>
     </div>
-<!--</div>-->
 
+  </div>
+</div>
+</div>
 <div th:replace="fragments/navbar :: navbar_footer"></div>
 <!--</div>-->
 </body>

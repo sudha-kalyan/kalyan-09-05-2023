@@ -97,6 +97,14 @@
   padding:3px;
   background-colour:#fff;
   }
+   input#GST{
+  width:250px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:3px;
+  background-colour:#fff;
+  }
  .inputError{
   background-color: #f4bfbf;
   border: 1px solid #d03e3e;
@@ -155,22 +163,26 @@
                             <input type="text"  name="supEmail" id="supEmail" th:field="*{supEmail}" class="form-control"/>
                         </div>
                         <div class="col">
-                            <label> Address1</label>
-                            <input type="text"  name="supAddress1" id="supAddress1" th:field="*{supAddress1}"  class="form-control"/>
+                            <label> GST</label>
+                            <input type="text"  name="GST" id="GST" th:field="*{GST}"  class="form-control"/>
                         </div>
                     </div>
                     <br>
                     <div class="row auto-align">
                     <br>
                     <div class="col">
-                        <label> Address2</label>
-                        <input  type="text" name="supAddress2" id="supAddress2" th:field="*{supAddress2}"  class="form-control"/>
+                        <label> Address1</label>
+                        <input  type="text" name="supAddress1" id="supAddress1" th:field="*{supAddress1}"  class="form-control"/>
                     </div>
+                        <div class="col">
+                            <label> Address2</label>
+                            <input  type="text" name="supAddress2" id="supAddress2" th:field="*{supAddress2}"  class="form-control"/>
+                        </div>
                     <div class="col">
                         <label>Address3</label>
                         <input type="text" name="supAddress3" id="supAddress3"  th:field="*{supAddress3}" class="form-control"/>
                     </div>
-                    <div class="col-6">
+                    <div class="col">
                         <label>Pin Code</label>
                         <input type="text"  name="pinCode" id="pinCode" th:field="*{pinCode}" class="form-control"/>
                     </div>

@@ -19,6 +19,8 @@ public class bank {
     @GeneratedValue
     private Integer id;
     private String bankName;
-    private String bankIfsc;
-    private String branchName;
+    private String ifsc;
+    private String branch;
+    private String swift;
+    private String remove;
 }

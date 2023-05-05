@@ -32,15 +32,22 @@ public class purchaseOrder extends DownloadSuperBean{
     private Double ltrRate;
     private String milkType;
     private String supplier;
+    private String suplCode;
+
     private String invNo;
     private LocalDate recDate;
     private Integer slNo;
     private Double amt;
-    private String bankName;
+
     private String paymentStatus;
-    private String VehicleNo;
+    private String vehNumber;
     private String paymentDate;
-    private String ifsc;
+    private String bankIfsc;
+    private String bankrefno;
+    public String[] getListValues(){
+        String values[] = {this.invDate.toString(), this.invNo,this.supplier, this.vehNumber, this.milkType,this.quantity.toString(), this.fatP.toString(), this.snfP.toString(), this.tsRate.toString(), this.ltrRate.toString(), this.amt.toString(), this.paymentStatus, this.bankIfsc,this.bankrefno,this.recDate.toString()};
+        return values;
+    }
 
    public void mapToVariables(@NotNull Map purchase) throws ParseException {
        this.supplier = purchase.get("supplier").toString();
