@@ -1,9 +1,6 @@
 package com.raithanna.dairy.RaithannaDairy.controller;
 import com.raithanna.dairy.RaithannaDairy.ServiceImpl.Utility.DownloadCsvReport;
-import com.raithanna.dairy.RaithannaDairy.models.bank;
-import com.raithanna.dairy.RaithannaDairy.models.purchaseOrder;
-import com.raithanna.dairy.RaithannaDairy.models.supplier;
-import com.raithanna.dairy.RaithannaDairy.models.vehicle;
+import com.raithanna.dairy.RaithannaDairy.models.*;
 import com.raithanna.dairy.RaithannaDairy.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,8 +18,7 @@ import java.util.*;
 public class purchaseOrderController {
     @Autowired
     private PurchaseOrderRepository purchaseOrderRepository;
-    @Autowired
-    private CustomerRepository customerRepository;
+
     @Autowired
     private SupplierRepository supplierRepository;
     @Autowired
@@ -37,6 +33,23 @@ public class purchaseOrderController {
             List<purchaseOrder> Amts = purchaseOrderRepository.findByOrderByAmtDesc();
             List<bank> bank = bankRepository.findByOrderByIdDesc();
             List<vehicle> vehicle =vehicleRepository.findByOrderByIdDesc();
+           purchaseOrder purchaseOrder = purchaseOrderRepository.findTopByOrderByOrderNoDesc();
+            Integer orderNo;
+            if (purchaseOrder==null) {
+                orderNo = 1;
+            } else {
+                orderNo = purchaseOrder.getOrderNo() + 1;
+            }
+//            Iterable<purchaseOrder>  purchaseorder = purchaseOrderRepository.findAll();
+//            List<Integer> orderNos = new ArrayList<>();
+//            for (purchaseOrder i : purchaseorder) {
+//                orderNos.add(i.getOrderNo());
+//            }
+//            System.out.println(purchaseorder);
+//            Integer orderNo = 1;
+//            if (!orderNos.isEmpty()) {
+//                orderNo = Integer.parseInt(String.valueOf(orderNos.get(orderNos.size() - 1))) + 1;
+//            }
             System.out.println(Suppliers.size());
             purchaseOrder po = new purchaseOrder();
             model.addAttribute("purchase", po);
@@ -44,6 +57,7 @@ public class purchaseOrderController {
             model.addAttribute("amt", Amts);
             model.addAttribute("bank", bank);
             model.addAttribute("vehicle", vehicle);
+            model.addAttribute("orderNo", orderNo);
             return "purchase";
         }
         List messages = new ArrayList<>();
@@ -72,87 +86,12 @@ public class purchaseOrderController {
     }
 
 
-//    @PostMapping("/purchase")
-//    public String savePurchases(@RequestParam Map<String, String> body, Model model) {
-//        //System.out.println("body" + body);
-//        purchaseOrder po = new purchaseOrder();
-//        System.out.println("SupplierCode:" + body.get("code"));
-//        po.setSupplier(body.get("supplierName"));
-//        po.setQuantity(Double.parseDouble(body.get("quantity")));
-//        // po.setInvDate(LocalDate.parse(body.get("invDate")));
-//        po.setFatP(Double.parseDouble(body.get("fatP")));
-//        po.setSnfP(Double.parseDouble(body.get("snfP")));
-//        po.setTsRate(Double.parseDouble(body.get("tsRate")));
-//        po.setMilkType(body.get("milkType"));
-//        po.setCode(body.get("supplierName"));
-//        po.setPaymentStatus(body.get("paymentStatus"));
-//        po.setBankName(body.get("bankName"));
-//        double ltrRate;
-//        ltrRate = ((Double.parseDouble(body.get("fatP")) + Double.parseDouble(body.get("snfP"))) * Double.parseDouble(body.get("tsRate"))) / 100;
-//        po.setLtrRate(ltrRate);
-////        //purchaseOrder purchaseOrder = purchaseOrderRepository.findTopByOrderBySlNoDesc();
-////        Integer slNo;
-////        if (purchaseOrder == null) {
-////            slNo = 1;
-////        } else {
-////            slNo = purchaseOrder.getSlNo() + 1;
-////        }
-////        po.setSlNo(slNo);
-//        Double amt;
-//        amt = (Double.parseDouble(body.get("quantity")) * ltrRate);
-//        po.setAmt(amt);
-//
-//
-//        // date order
-//        List<String> l = new ArrayList<>();
-//        l.add(po.getInvDate().toString());
-//        //countDistinctRackById(Long id);
-//        List<purchaseOrder> ll = purchaseOrderRepository.findByInvDate(po.getInvDate());
-//
-//        System.out.println("************" + ll.size());
-//
-//        Set<String> supplierName = new HashSet<>();
-//
-//        for (purchaseOrder str : ll) {
-//            supplierName.add(str.getSupplier());
-//        }
-//        System.out.println("************ supplierName" + supplierName.size());
-//        //List<purchaseOrder> list = purchaseOrderRepository.findBySupplierAndInvDate(po.getSupplier(), po.getInvDate());
-//        // main order logic
-//        List<purchaseOrder> list = purchaseOrderRepository.findBySupplierAndInvDate(po.getSupplier(), po.getInvDate());
-//        //sub order logic
-//        Integer subOrder = purchaseOrderRepository.countBySupplierAndInvDate(po.getSupplier(), po.getInvDate());
-//        Integer orderNo1 = subOrder + 1;
-//        String invNo = "";
-//        System.out.println("dayWise sub order--- " + orderNo1);
-//        if (list.size() > 0) {
-//            String invNumber = list.get(0).getInvNo();  // DB Invoice Number --- FD-2023-04-23-VDPL_007-001/1
-//            String[] arrOfStr = invNumber.split("/", 2);
-//            System.out.println("arrOfStr --- " + arrOfStr[0]);
-//            System.out.println("arrOfStr --- " + arrOfStr[1]);
-//            System.out.println("dayWise main order --- " + list.size());
-//            System.out.println("DB Invoice Number --- " + invNumber);
-//            invNo = arrOfStr[0] + "/" + orderNo1.toString();
-//            po.setInvNo(invNo);
-//        } else {
-//            System.out.println("dayWise main order --- " + list.size());
-//            //001
-//            String format = String.format("%03d", list.size() + 1);
-//
-//            if (supplierName.size() > 0) {
-//
-//                String format1 = String.format("%03d", supplierName.size() + 1);
-//                invNo = "FD-" + po.getInvDate() + "-" + po.getSupplier() + "_" + format1 + "/" + orderNo1.toString();
-//            } else {
-//
-//                invNo = "FD-" + po.getInvDate() + "-" + po.getSupplier() + "_" + format + "/" + orderNo1.toString();
-//            }
-//            po.setInvNo(invNo);
-//        }
-//        purchaseOrderRepository.save(po);
-//        Map<String, String> respBody = new HashMap<>();
-//        return "redirect:/purchase";
-//    }
+    @GetMapping("/getPurchase")
+    public String getPurchase(@RequestParam(name = "orderNo", defaultValue = "1") Integer orderNo, Model model) {
+        List<purchaseOrder> list = purchaseOrderRepository.findByOrderNo(orderNo);
+        model.addAttribute("list", list);
+        return "purchaseDisplay";
+    }
 
     @PostMapping("/purchaseOrderNew")
     public ModelAndView purchaseOrderForm(Model model,@RequestBody List<purchaseOrder> purchaseList, HttpSession session) {
@@ -198,6 +137,8 @@ public class purchaseOrderController {
                 po.setRecDate(list.getRecDate());
                 po.setCode(list.getCode());
                 po.setInvNo(invNo+subOrder);
+                po.setOrderNo(list.getOrderNo());
+                po.setSuplCode(list.getSuplCode());
 
                 purchaseOrderRepository.save(po);
             }
@@ -216,8 +157,8 @@ public class purchaseOrderController {
         purchaseOrder po = new purchaseOrder();
         System.out.println("SupplierCode:" + body.get("code"));
         po.setSupplier(body.get("supplierName"));
-        po.setInvDate(LocalDate.parse(body.get("invDate")));
-        po.setRecDate(LocalDate.parse(body.get("recDate")));
+        po.setInvDate(String.valueOf(LocalDate.parse(body.get("invDate"))));
+        po.setRecDate(String.valueOf(LocalDate.parse(body.get("recDate"))));
 
         // excel data list
         List<purchaseOrder> list = purchaseOrderRepository.findBySupplierAndInvDateBetween(po.getSupplier(), po.getInvDate(), po.getRecDate());
@@ -251,8 +192,8 @@ public class purchaseOrderController {
         purchaseOrder po = new purchaseOrder();
         System.out.println("SupplierCode:" + body.get("code"));
         po.setSupplier(body.get("supplierName"));
-        po.setInvDate(LocalDate.parse(body.get("invDate")));
-        po.setRecDate(LocalDate.parse(body.get("recDate")));
+        po.setInvDate(String.valueOf(LocalDate.parse(body.get("invDate"))));
+        po.setRecDate(String.valueOf(LocalDate.parse(body.get("recDate"))));
         // excel data list
         List<purchaseOrder> list = purchaseOrderRepository.findBySupplierAndInvDateBetween(po.getSupplier(), po.getInvDate(), po.getRecDate());
         List<supplier> Suppliers = supplierRepository.findByOrderByIdDesc();
@@ -284,12 +225,12 @@ public class purchaseOrderController {
         purchaseOrder po = new purchaseOrder();
         System.out.println("invNo:" + body.get("No"));
         po.setSupplier(body.get("supplierName"));
-        po.setInvDate(LocalDate.parse(body.get("invDate")));
+        po.setInvDate(String.valueOf(LocalDate.parse(body.get("invDate"))));
         // po.setSlNo(body.get("slNo"));
         // po.setSnfP(body.get("snfP"));
 
         // excel data list
-        List<purchaseOrder> list = purchaseOrderRepository.findBySupplierAndInvDateBetween(po.getSupplier(), po.getInvDate(), po.getRecDate());
+        List<purchaseOrder> list = purchaseOrderRepository.findBySupplierAndInvDateBetween(po.getSupplier(),po.getInvDate(),po.getRecDate());
 
         String header[] = {"invDate","supplier","vehicleNo","quantity","fatP","snfP","tsRate","milkType","bankName","paymentStatus","vehicleNo"};
 
@@ -298,5 +239,6 @@ public class purchaseOrderController {
         System.out.println("Excel Size -- "+list.size());
         return "redirect:/purchaseExcelData";
     }
+
 
 }

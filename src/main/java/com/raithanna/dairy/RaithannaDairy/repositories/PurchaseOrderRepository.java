@@ -1,6 +1,5 @@
 package com.raithanna.dairy.RaithannaDairy.repositories;
 import com.azure.spring.data.cosmos.repository.Query;
-import com.raithanna.dairy.RaithannaDairy.models.customer;
 import com.raithanna.dairy.RaithannaDairy.models.purchaseOrder;
 import org.springframework.data.repository.CrudRepository;
 import java.time.LocalDate;
@@ -26,8 +25,11 @@ public interface PurchaseOrderRepository extends CrudRepository<purchaseOrder,In
    // List<purchaseOrder> findByInvDate(LocalDate recDate);
 
    @Query("select * from  purchase_order where supplier=?1 and invDate=?2 and invDate=?3")
-   List<purchaseOrder> findBySupplierAndInvDateBetween(String supplier, LocalDate invDate, LocalDate recDate);
+   List<purchaseOrder> findBySupplierAndInvDateBetween(String supplier, String invDate, String recDate);
    @Query("select * from  purchase_order where invDate=?1")
-   List<purchaseOrder> findByInvDate(LocalDate invDate);
+   List<purchaseOrder> findByInvDate(String invDate);
+   purchaseOrder findTopByOrderByOrderNoDesc();
+   List<purchaseOrder> findByOrderNo(Integer orderNo);
+
 }
 

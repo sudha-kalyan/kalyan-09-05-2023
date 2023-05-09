@@ -51,6 +51,7 @@ table, th, td {
 <div th:replace="fragments/navbar :: navbar_header"></div>
 <div th:replace="fragments/navbar :: navbar_menu"></div>
 <form th:action="@{/purchasePdfData}" th:object="${purchase}" method="POST">
+  <br>
   <table style="width:100%">
     <tr >
       <th rowspan="2"><h1 class="company_name"><center><font color="green ">

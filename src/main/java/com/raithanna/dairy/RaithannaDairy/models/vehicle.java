@@ -25,8 +25,6 @@ public class vehicle {
 
     private LocalDate vehEndDate;
 
-    private String suplAttached;
-
     private String suplAttached1;
 
     private String suplAttached2;

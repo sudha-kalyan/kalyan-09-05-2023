@@ -23,7 +23,7 @@ public class purchaseOrder extends DownloadSuperBean{
     @GeneratedValue
     private Integer id;
 
-    private LocalDate invDate;
+    private String invDate;
     private Double quantity;
     private Double fatP;
     private Double snfP;
@@ -33,15 +33,13 @@ public class purchaseOrder extends DownloadSuperBean{
     private String milkType;
     private String supplier;
     private String suplCode;
-
+    private Integer orderNo;
     private String invNo;
-    private LocalDate recDate;
+    private String recDate;
     private Integer slNo;
     private Double amt;
-
     private String paymentStatus;
     private String vehNumber;
-    private String paymentDate;
     private String bankIfsc;
     private String bankrefno;
     public String[] getListValues(){

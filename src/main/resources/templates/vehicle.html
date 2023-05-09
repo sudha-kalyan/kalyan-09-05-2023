@@ -105,7 +105,37 @@ input#vehicleNo{
       </div>
     </div>
     <div class="row auto-align">
-
+      <div class="col">
+        <label>Rate Per Km</label>
+        <input   type="text"  id="rateperKm"  th:field="*{rateperKm}"  class="form-control" value="25.0"/>
+      </div>
+      <div class="col">
+        <label for="vehStartDate">Veh Start Date</label>
+        <input id="vehStartDate" class="form-control" type="date" th:min="${dateTime}" placeholder="dd/mm/yyyy">
+      </div>
+      <div class="col">
+        <label for="vehEndDate">Veh End Date</label>
+        <input id="vehEndDate" class="form-control" type="date" th:min="${dateTime}" placeholder="dd/mm/yyyy">
+      </div>
+      <div class="col">
+        <label for="suplAttached1">Supp Attached1</label>
+        <select id="suplAttached1" class="form-control" name="compartments" >
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div><div class="col">
+      <label for="suplAttached2">Supp Attached2</label>
+      <select id="suplAttached2" class="form-control" name="compartments" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </div><div class="col">
+      <label for="suplAttached3">Supp Attached3</label>
+      <select id="suplAttached3" class="form-control" name="compartments" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </div>
     </div>
     <br>
     <div class="box-footer">
