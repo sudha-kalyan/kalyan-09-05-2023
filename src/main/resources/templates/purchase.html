@@ -409,7 +409,7 @@ if(paymentStatus!=='Received'){
  //bankName = '-';
  bankIfsc = '-';
 }
-var suplCode=$("#recDate").val();
+var suplCode=$("#recDate ").val();
 
 var ltrRate = ((parseFloat(fatP)+parseFloat(snfP))*parseFloat(tsRate)/100);
 var amt= ((parseFloat(ltrRate))*quantity).toFixed(2);
